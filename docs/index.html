@@ -111,7 +111,7 @@
     <div class="row">
         <div class="col-lg-6 col-12">
             <div class="card-columns" style="column-count: 1">
-                <div class="card p-4 mb-4">
+                <div class="card p-4 mb-4" hidden>
                     <div class="card-block">
                         <div class="row justify-content-center">
                             <h5 style="text-transform: uppercase">Got any grievances?</h5>
@@ -131,6 +131,7 @@
                         <div style="text-align: center" class=" my-3 px-lg-3 " hidden>
                             <p>Already submitted? Login</p>
                         </div>
+
                     </div>
                 </div>
 
@@ -202,7 +203,8 @@
                                 is the objective of Student Grievance Redressal
                                 Portal?</label>
                                 <div class="so-tab-content">
-                                    <p class="text-muted">The objective of the portal is to ensure speedy, convenient and
+                                    <p class="text-muted">The objective of the portal is to ensure speedy, convenient
+                                        and
                                         effective
                                         redressal of student issues by the administration.
                                     </p>
@@ -306,8 +308,14 @@
                 <div class="card p-4 mb-4 d-none d-lg-block">
                     <div class="card-block">
                         <form action="volunteer_dashboard.html">
-                            <h5 class="mt-2" style="text-transform: uppercase; text-align: center">Login</h5>
-                            <h6 class="mb-4 mt-1 text-muted" style="text-align: center">Access your dashboard</h6>
+                            <div class="row justify-content-center">
+                                <h5 style="text-transform: uppercase">Got any grievances?</h5>
+                            </div>
+                            <div class="row mb-2 justify-content-center" hidden>
+                                <h6 class="text-muted">We are there for you!</h6>
+                            </div>
+                            <h5 class="mt-2" style="text-transform: uppercase; text-align: center" hidden>Login</h5>
+                            <h6 class="mb-4 mt-1 text-muted" style="text-align: center">Please login to access your dashboard</h6>
                             <div class="input-group mb-3 px-lg-3">
                                 <input type="email" class="form-control" placeholder="Enter your ID"
                                        aria-label="Username"
@@ -321,8 +329,23 @@
                             <div style="text-align: center" class=" mb-3 px-lg-3">
                                 <button type="submit" class="btn btn-success" style="width: 100%">Login</button>
                             </div>
+                            <div style="text-align: center" class=" mb-3 px-lg-3">
+                                <button onclick="location.href='student_dashboard.html';" type="button" class="btn btn-success" style="width: 100%">Student Dashboard (Temp)</button>
+                            </div>
+                            <div style="text-align: center" class=" mb-3 px-lg-3">
+                                <button onclick="location.href='admin_dashboard.html';" type="button" class="btn btn-success" style="width: 100%">Admin Dashboard (Temp)</button>
+                            </div>
                             <div style="text-align: center" class=" px-lg-3 ">
                                 <a href="" class><p>Forgot Password?</p></a>
+                            </div>
+                            <div style="" class="text-muted my-3 px-lg-3 ">
+                                <p>If you are a student, please note:</p>
+                                <ul class="text-muted">
+                                    <li>
+                                        If you don't have your login credentials, please contact your department staff.
+                                        You will receive them via email.
+                                    </li>
+                                </ul>
                             </div>
                         </form>
                     </div>

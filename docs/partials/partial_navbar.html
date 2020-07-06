@@ -1,6 +1,6 @@
 <!-- Navbar-->
 <header class="header">
-    <nav class="navbar active navbar-expand-lg fixed-top py-3">
+    <nav class="navbar put-shadow active navbar-expand-lg fixed-top py-3">
         <div class="container">
 
             <a class="navbar-brand p-0 mr-0" href="#">
@@ -185,15 +185,17 @@
         $(window).on('scroll', function () {
             if ($(window).scrollTop() > 10) {
                 $('.navbar').addClass('active');
+                $('.navbar').addClass('put-shadow');
                 console.log($(window).scrollTop())
                 if ($('.navbar-logo').hasClass('hidden')) {
                     console.log('Here');
                     setTimeout(makeLogoVisible, 100);
                 }
             } else {
-                {#$('.navbar').removeClass('active');#}
+                // $('.navbar').removeClass('active');
+                $('.navbar').removeClass('put-shadow');
                 if (((getBootstrapDeviceSize() == 'lg') || (getBootstrapDeviceSize() == 'xl')))
-                    $('.navbar-logo').addClass('hidden');
+                    // $('.navbar-logo').addClass('hidden');
             }
         });
     });

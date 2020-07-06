@@ -159,7 +159,7 @@ button:focus {
 }
 
 .options:hover .options-title {
-    /*font-size: medium;*/
+    font-size: medium;
 }
 
 .options-img {
@@ -404,7 +404,11 @@ button:focus {
 /* Change navbar styling on scroll */
 .navbar.active {
     background: #fff;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.put-shadow{
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1) !important;
 }
 
 .navbar.active .nav-link {
