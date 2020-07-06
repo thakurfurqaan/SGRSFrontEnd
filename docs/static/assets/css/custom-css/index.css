@@ -89,6 +89,7 @@ button:focus {
     color: white;
     position: fixed;
     background-color: white;
+    overflow-x: scroll;
 }
 
 .sidebar-title {
@@ -132,6 +133,7 @@ button:focus {
 
 .sidebar {
     text-align: center;
+
 }
 
 /* SIDEBAR ENDS */
