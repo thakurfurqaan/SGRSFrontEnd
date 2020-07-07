@@ -1,3 +1,25 @@
+/* ENGATI CHATBOT STARTS */
+.engt-boxclose.engt-themecolor{
+    background-color: #4caa67 !important;
+    color: white !important;
+
+}
+
+.engt-sheet-header.engt-themecolor{
+    background-color: #4caa67 !important;
+
+}
+
+#branding-powered{
+    display: none !important;
+}
+
+.engt-comment-body-container{
+
+}
+
+/* ENGATI CHATBOT ENDS */
+
 /* ACCORDION STARTS */
 .so-tab {
     position: relative;
