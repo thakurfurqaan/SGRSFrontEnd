@@ -103,7 +103,7 @@
 
 
 <div class="container mt-lg-5 mt-5 pt-5">
-    <div class="row mb-4">
+    <div class="row mb-4 d-none d-lg-block">
         <div class="col">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -129,7 +129,8 @@
                                 <div class="col" style="text-align: left">
                                     <button class="px-3 py-2" onclick="location.href='dashboard.html';"
                                             style=" border-radius: 5px; border: none; background-color:white ; color: #4caa67">
-                                        <i style="font-size: xx-large" class="fa fa-map-marker" aria-hidden="true"></i><br>
+                                        <i style="font-size: xx-large" class="fa fa-map-marker"
+                                           aria-hidden="true"></i><br>
                                         Track Grievance
                                     </button>
                                 </div>
@@ -184,14 +185,21 @@
                         <div class="row mb-2 justify-content-center">
                             <h6 class="text-muted">We are there for you!</h6>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col">
+                        <div class="row justify-content-center" >
+                            <div class="col" style="text-align: right">
                                 <button class="px-3 py-2"
                                         style=" border-radius: 5px; border: none; background-color: #4caa67; color: white">
                                     <i
                                             style="font-size: xx-large" class="fa fa-comments-o"
                                             aria-hidden="true"></i><br>
                                     Submit a Grievance
+                                </button>
+                            </div>
+                            <div class="col" style="text-align: left">
+                                <button class="px-3 py-2" onclick="location.href='dashboard.html';"
+                                        style=" border-radius: 5px; border: #4caa67 1px solid; background-color:white ; color: #4caa67">
+                                    <i style="font-size: xx-large" class="fa fa-map-marker" aria-hidden="true"></i><br>
+                                    Track Grievance
                                 </button>
                             </div>
 
@@ -256,7 +264,7 @@
                         <h6 class="mb-4 mt-1 text-muted" style="text-align: center">Get your grievances resolved in
                             just 5 steps!</h6>
                         <p class="card-text" style="text-align: center">
-                            <img src="static/assets/img/process-4.png" height="600">
+                            <img src="static/assets/img/process-4.png" height="450">
                         </p>
                         <p class="mb-0 mt-3 card-text text-muted" style="">
                             For verification purpose, we need the following documents:<br>
@@ -380,7 +388,7 @@
                     </div>
 
                 </div>
-                <div class="card p-4 mb-5">
+                <div class="card p-4 mb-4">
                     <span class="jump-link" id="about"></span>
                     <div class="card-block">
                         <h4 class="card-title mb-2">About Us</h4>
