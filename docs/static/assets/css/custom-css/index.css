@@ -1,20 +1,66 @@
+/* READ MORE STARTS */
+#more {
+    display: none;
+}
+
+/* READ MORE ENDS*/
+
+/* HEADBUTTING FIX STARTS */
+
+.jump-link::before {
+    display: block;
+    content: " ";
+    margin-top: -150px;
+    height: 150px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* HEADBUTTING FIX ENDS */
+
+/* SCROLLBAR STARTS */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /*background: #f1f1f1;*/
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c3c3c3;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* SCROLLBAR ENDS */
+
+
 /* ENGATI CHATBOT STARTS */
-.engt-boxclose.engt-themecolor{
+.engt-boxclose.engt-themecolor {
     background-color: #4caa67 !important;
     color: white !important;
 
 }
 
-.engt-sheet-header.engt-themecolor{
+.engt-sheet-header.engt-themecolor {
     background-color: #4caa67 !important;
 
 }
 
-#branding-powered{
+#branding-powered {
     display: none !important;
 }
 
-.engt-comment-body-container{
+.engt-comment-body-container {
 
 }
 
@@ -351,7 +397,7 @@ button:focus {
 }
 
 .navbar .dropdown-item {
-    color: #555555;
+    color: #555555 !important;
     font-size: small;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -431,7 +477,7 @@ button:focus {
     /*box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);*/
 }
 
-.put-shadow{
+.put-shadow {
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -444,7 +490,7 @@ button:focus {
 .navbar .dropdown-item:hover,
 .navbar .dropdown-item:focus {
     /*color: #555;*/
-    text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+    /*text-shadow: 0 0 .65px #333, 0 0 .65px #333;*/
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
@@ -922,6 +968,10 @@ a:focus {
 
 a {
     color: #4caa67 !important;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* MISC ENDS */

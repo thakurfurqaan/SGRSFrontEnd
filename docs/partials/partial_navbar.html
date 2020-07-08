@@ -1,6 +1,6 @@
 <!-- Navbar-->
 <header class="header">
-    <nav class="navbar put-shadow active navbar-expand-lg fixed-top py-3">
+    <nav class="navbar active navbar-expand-lg fixed-top py-lg-4 py-3">
         <div class="container">
 
             <a class="navbar-brand p-0 mr-0" href="#">
@@ -28,12 +28,12 @@
                 <ul class="navbar-nav ml-auto align-items-lg-center align-items-md-start">
                     <li class="nav-item active"><a href="index.html" class="nav-link  font-weight-bold">Home <span
                             class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a href="login.html" class="nav-link  " hidden>Login</a></li>
-                    <li class="nav-item"><a href="#process" class="nav-link  ">Process</a></li>
-                    <li class="nav-item"><a href="#faq" class="nav-link  ">FAQ</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link  ">About</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link  ">Contact</a></li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item"><a href="index.html#login" class="nav-link  ">Login</a></li>
+                    <li class="nav-item"><a href="index.html#process" class="nav-link  ">Process</a></li>
+                    <li class="nav-item"><a href="index.html#faq" class="nav-link  ">FAQ</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link  ">Contact</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link  ">About</a></li>
+                    <li class="nav-item dropdown mr-2">
                         <select onchange="doGTranslate(this);">
                             <option class="lang notranslate" value="en|en">English</option>
                             <option class="lang notranslate" value="en|ar">Arabic</option>
@@ -70,14 +70,16 @@
                             <a class="dropdown-item" href="index.html">Logout</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown d-none " hidden>
+                    <li class="nav-item dropdown d-none d-lg-block">
                         <a class="nav-link p-0" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img style="border-radius: 50%" height="30" src="static/assets/img/Profile_pic.jpg" alt="">
+                            <img class="mr-2" style="border-radius: 50%" height="30" src="static/assets/img/student_dp.jpg" alt="">
+                            Furqaan Thakur
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="ngo_dashboard.html">Dashboard (N)</a>
-                            <a class="dropdown-item" href="volunteer_dashboard.html">Dashboard (V)</a>
+                            <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                            <a class="dropdown-item" href="dashboard.html">Lodge Grievance</a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="index.html">Logout</a>
                         </div>
                     </li>
@@ -190,7 +192,6 @@
             if ($(window).scrollTop() > 10) {
                 $('.navbar').addClass('active');
                 $('.navbar').addClass('put-shadow');
-                console.log($(window).scrollTop())
                 if ($('.navbar-logo').hasClass('hidden')) {
                     console.log('Here');
                     setTimeout(makeLogoVisible, 100);
@@ -198,7 +199,7 @@
             } else {
                 // $('.navbar').removeClass('active');
                 $('.navbar').removeClass('put-shadow');
-                if (((getBootstrapDeviceSize() == 'lg') || (getBootstrapDeviceSize() == 'xl')))
+                if (((getBootstrapDeviceSize() == 'lg') || (getBootstrapDeviceSize() == 'xl')));
                     // $('.navbar-logo').addClass('hidden');
             }
         });
