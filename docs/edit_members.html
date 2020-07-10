@@ -1,4 +1,4 @@
-x<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,7 @@ x<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>
-        URHope - Where Hope Prevails
+        Members URHope - Where Hope Prevails
     </title>
 
     <!----Custom Files----->
@@ -46,34 +46,32 @@ x<!DOCTYPE html>
 <body class="landing-page"
       style="background-color: #f5f9fe">
 
-<!-- Navbar -->
 <div class="partials_navbar_import d-block d-lg-none"></div>
 <script type="text/javascript">
     $(document).ready(function () {
         $('.partials_navbar_import').load('partials/partial_navbar.html');
     });
 </script>
-<!--End Navbar -->
 
 <!-- Sidebar -->
 <div class="partials_sidebar_import d-none d-lg-block"></div>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.partials_sidebar_import').load('partials/partial_sidebar.html');
+        $('.partials_sidebar_import').load('partials/partial_ngo_sidebar.html');
     });
 </script>
-<!--End Sidebar -->
+<!-- Sidebar -->
 
 <!---New Page Title--->
 <div class="container pl-lg-5 mt-4 mt-lg-0 mb-2">
     <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
         <div class="row align-items-center" align="center">
             <div class="col">
-                <h1 class="font-weight-bold" style="color:#252766; text-align: left">Your Dashboard</h1>
+                <h1 class="font-weight-bold" style="color:#252766; text-align: left">Member Details</h1>
             </div>
             <div class="col justify-content-end d-none d-lg-block">
                 <h6 class="font-weight-bold" style="color:#252766; text-align: end">
-                    <img src="static/assets/img/student_dp.jpg" class="profile-pic-dashboard" height="50">
+                    <img src="static/assets/img/profile2.png" class="profile-pic-dashboard" height="50">
                     &nbsp;
                     Furqaan Thakur
                     <span class="badge badge-secondary" style="background-color:#252766">Student</span>
@@ -84,71 +82,23 @@ x<!DOCTYPE html>
 </div>
 <!---New Page Title Ends--->
 
-<!-- Page Content -->
-<div class="container mb-lg-3 mt-lg-2 pl-lg-5">
+<!---Page Content Starts--->
+
+<div class="container mt-3 pl-lg-5">
     <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="options" onclick="location.href='ngo_new_task.html';" style="cursor: pointer">
-                <div>
-                    <img src="static/assets/img/tasks.jpg" class="options-img"/>
-                </div>
-                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-plus"
-                                                  aria-hidden="true"></i><br>
-                    Lodge Grievance
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="options" onclick="location.href='ngo_profile_view.html';" style="cursor: pointer">
-                <div>
-                    <img src="static/assets/img/account.jpg" class="options-img"/>
-                </div>
-                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-user" aria-hidden="true"></i><br>
-                    My Profile
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="options" onclick="location.href='grievances.html';" style="cursor: pointer">
-                <div>
-                    <img src="static/assets/img/feedback.jpg" class="options-img"/>
-                </div>
-                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-paper-plane"
-                                                  aria-hidden="true"></i><br>
-                    Submit Feedback
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="options" onclick="location.href='index.html';" style="cursor: pointer">
-                <div>
-                    <img src="static/assets/img/logout.jpeg" class="options-img"/>
-                </div>
-                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-sign-out"
-                                                  aria-hidden="true"></i><br>
-                    Logout
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-
-<div class="container mt-1 pl-lg-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
-
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-2">
             <div class="card-custom mt-2 mt-lg-0 help-card">
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
-                        <h5 class="my-3 card-custom-title" style="">My Grievances (S)</h5>
+                        <h5 class="my-3 card-custom-title" style="">Members</h5>
                     </div>
                     <table class="table step3-table filter-this-table">
                         <thead>
                         <tr>
-                            <th scope="col"><h6>No.</h6></th>
-                            <th scope="col"><h6>Title</h6></th>
-                            <th scope="col"><h6>Type</h6></th>
+                            <th scope="col"><h6>Id</h6></th>
+                            <th scope="col"><h6>Name</h6></th>
+                            <th scope="col"><h6>Phone</h6></th>
                             <th scope="col"><h6>Details</h6></th>
                         </tr>
                         </thead>
@@ -158,15 +108,15 @@ x<!DOCTYPE html>
 
                         <tr aria-rowspan="2" class="card-row">
                             <td class="align-middle">
-                                <p class="m-0">123456</p>
-                            </td>
-                            <td class="align-middle">
                                 <div class="initiative-heading">
-                                    <h6 class="font-weight-bold mb-0">College is broken :(</h6>
+                                    <h6 class="font-weight-bold mb-0">1201</h6>
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0">Infrastructure</p>
+                                <p class="m-0">Alex Merchando</p>
+                            </td>
+                            <td class="align-middle">
+                                <p class="m-0">123456789</p>
                             </td>
                             <td class="align-middle">
                                 <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
@@ -300,17 +250,16 @@ x<!DOCTYPE html>
 
                         <tr aria-rowspan="2" class="card-row">
                             <td class="align-middle">
-                                <p class="m-0">234567</p>
-                            </td>
-                            <td class="align-middle">
                                 <div class="initiative-heading">
-                                    <h6 class="font-weight-bold mb-0">Exams must be postponed</h6>
+                                    <h6 class="font-weight-bold mb-0">1202</h6>
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0">Exams</p>
+                                <p class="m-0">Roy Caloner</p>
                             </td>
-
+                            <td class="align-middle">
+                                <p class="m-0">123456789</p>
+                            </td>
                             <td class="align-middle">
                                 <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
                                         data-target="#collapse2"
@@ -439,44 +388,23 @@ x<!DOCTYPE html>
                         </tr>
                         <!--========== ROW 2 ENDS =========-->
 
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="card-custom mt-4 help-card">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col">
-                        <h5 class="my-3 card-custom-title" style="">Grievances Received(D,I,U,A)</h5>
-                    </div>
-                    <table class="table step3-table filter-this-table">
-                        <thead>
-                        <tr>
-                            <th scope="col"><h6>No.</h6></th>
-                            <th scope="col"><h6>Title</h6></th>
-                            <th scope="col"><h6>Type</h6></th>
-                            <th scope="col"><h6>Details</h6></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-
-                        <!--========== ROW 1 STARTS =========-->
+                        <!--========== ROW 3 STARTS =========-->
 
                         <tr aria-rowspan="2" class="card-row">
                             <td class="align-middle">
                                 <div class="initiative-heading">
-                                    <h6 class="font-weight-bold mb-0">Provide clothing to the needy</h6>
+                                    <h6 class="font-weight-bold mb-0">1203</h6>
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0">Clothing</p>
+                                <p class="m-0">Raj Caloner</p>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0">123456</p>
+                                <p class="m-0">123456789</p>
                             </td>
                             <td class="align-middle">
                                 <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
-                                        data-target="#collapseexploretask1"
+                                        data-target="#collapse2"
                                         aria-expanded="false" aria-controls="collapseExample">
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </button>
@@ -487,7 +415,19 @@ x<!DOCTYPE html>
                         </tr>
                         <tr>
                             <td colspan="4" class="sub-td">
-                                <table class="collapse sub-table" id="collapseexploretask1">
+                                <table class="collapse sub-table" id="collapse2">
+                                    <tr>
+                                        <td colspan="1">
+                                            Details of Applied Volunteers
+                                        </td>
+                                        <td colspan="3">
+                                            <a href="">
+                                                <button class="btn btn-sm btn-outline-primary mt-1">
+                                                    Download
+                                                </button>
+                                            </a>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td colspan="1">
                                             Task ID
@@ -576,14 +516,11 @@ x<!DOCTYPE html>
                                         </td>
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
-                                                <a href="old_files/volunteer_applied_tasks.html">
-                                                    <button class="btn btn-success mt-1">Apply</button>
+                                                <a href="ngo_edit_task.html">
+                                                    <button class="btn btn-success mt-1">Edit Task</button>
                                                 </a>
-                                                <a href="old_files/volunteer_applied_tasks.html">
-                                                    <button class="btn btn-success mt-1" disabled>Applied</button>
-                                                </a>
-                                                <a href="old_files/volunteer_applied_tasks.html">
-                                                    <button class="btn btn-danger mt-1">Cancel Application</button>
+                                                <a href="">
+                                                    <button class="btn btn-danger mt-1">Delete Task</button>
                                                 </a>
                                             </div>
                                         </td>
@@ -591,295 +528,118 @@ x<!DOCTYPE html>
                                 </table>
                             </td>
                         </tr>
-                        <!--========== ROW 1 ENDS =========-->
+                        <!--========== ROW 3 ENDS =========-->
 
-                        <!--========== ROW 2 STARTS =========-->
 
-                        <tr aria-rowspan="2" class="card-row">
-                            <td class="align-middle">
-                                <div class="initiative-heading">
-                                    <h6 class="font-weight-bold mb-0">Provide clothing to the needy</h6>
-                                </div>
-                            </td>
-                            <td class="align-middle">
-                                <p class="m-0">Clothing</p>
-                            </td>
-                            <td class="align-middle">
-                                <p class="m-0">123456</p>
-                            </td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
-                                        data-target="#collapseexploretask2"
-                                        aria-expanded="false" aria-controls="collapseExample">
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </button>
-                            </td>
-                            <td class="align-middle" hidden>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4" class="sub-td">
-                                <table class="collapse sub-table" id="collapseexploretask2">
-                                    <tr>
-                                        <td colspan="1">
-                                            Task ID
-                                        </td>
-                                        <td colspan="3">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">1</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="1">
-                                            Task Details
-                                        </td>
-                                        <td colspan="3">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">We need volunteers to deliver the
-                                                    clothes from
-                                                    the
-                                                    main
-                                                    junction to the slum areas
-                                                </p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="1">
-                                            Task Creator
-                                        </td>
-                                        <td colspan="3">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">NGO
-                                                </p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="1">
-                                            Volunteers required
-                                        </td>
-                                        <td colspan="2">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">12
-                                                </p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="1">
-                                            Volunteers applied
-                                        </td>
-                                        <td colspan="2">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">6
-                                                </p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="1" class="">
-                                            <p class="mt-1">Contact</p>
-                                        </td>
-                                        <td>
-                                            <div class="initiative-contact align-content-around">
-                                                <a href="tel:1077-240486">
-                                                    <button class="btn btn-sm btn-outline-primary mt-1">01334-235010
-                                                    </button>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="1">
-                                            Website
-                                        </td>
-                                        <td colspan="3">
-                                            <a href="www.urhope.in">
-                                                <button class="btn btn-sm btn-outline-primary mt-1">www.urhope.in
-                                                </button>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="1">
-                                            <p class="mt-1">Action</p>
-                                        </td>
-                                        <td colspan="3">
-                                            <div style="" class=" mb-2 ">
-                                                <a href="old_files/volunteer_applied_tasks.html">
-                                                    <button class="btn btn-success mt-1">Apply</button>
-                                                </a>
-                                                <a href="old_files/volunteer_applied_tasks.html">
-                                                    <button class="btn btn-success mt-1" disabled>Applied</button>
-                                                </a>
-                                                <a href="old_files/volunteer_applied_tasks.html">
-                                                    <button class="btn btn-danger mt-1">Cancel Application</button>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!--========== ROW 2 ENDS =========-->
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
+
+
+
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-1">
             <div class="card-custom mt-2 mt-lg-0 help-card">
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
-                        <h5 class="my-3 card-custom-title" style="">Notifications</h5>
+                        <h5 class="my-3 card-custom-title" style="">Member
+                        </h5>
                     </div>
-                    <table class="table filter-this-table">
-                        <tbody>
-                        <tr>
-                            <td style="vertical-align: middle" colspan="1">
-                                <h6 class="my-2">8 May 2020 12:36</h6>
-                                <p>
-                                    <a href="" class="mt-1" hidden>
-                                        <img src="static/assets/img/profile1.jpg"
-                                             class="profile-pic" style="width: 20px" hidden>
-                                        &nbsp
-                                        Mike Richards
-                                    </a>
+                </div>
 
-                                    Your grievance (No. 123456) has been <strong>approved</strong> by your department.
-                                    You will be
-                                    notified about further actions
-                                    <a href="" class="mt-1" hidden>
-                                        Provide clothing to the needy
-                                    </a>
-                                    .
-                                    For any queries, reach out to us at
-                                    <a href="" class="mt-1">
-                                        studgrievred@andhrapradesh.com
-                                    </a>
-                                    and phone no.
-                                    <a href="" class="mt-1">
-                                        1234567890
-                                    </a>
-                                    . Thank You for making this world a better place!
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: middle" colspan="1">
-                                <h6 class="my-2">8 May 2020 12:36</h6>
-                                <p>
-                                    <a href="" class="mt-1" hidden>
-                                        <img src="static/assets/img/profile1.jpg"
-                                             class="profile-pic" style="width: 20px" hidden>
-                                        &nbsp
-                                        Mike Richards
-                                    </a>
+                <div class="form-group mb-3  volunteer-field">
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1">Id No.</label>
+                            <input type="number" class="form-control" placeholder="Id No." aria-label="Username"
+                                   aria-describedby="basic-addon1" value="1201">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1"hidden>Phone No</label>
+                            <input type="tel" class="form-control" placeholder="Phone No" aria-label="Username"
+                                   aria-describedby="basic-addon1"hidden>
+                        </div>
+                    </div>
+                </div>
 
-                                    Your grievance (No. 234567) has been <strong>rejected</strong> by your department.
-                                    You will be
-                                    notified about further actions
-                                    <a href="" class="mt-1" hidden>
-                                        Provide clothing to the needy
-                                    </a>
-                                    .
-                                    For any queries, reach out to us at
-                                    <a href="" class="mt-1">
-                                        studgrievred@andhrapradesh.com
-                                    </a>
-                                    and phone no.
-                                    <a href="" class="mt-1">
-                                        1234567890
-                                    </a>
-                                    . Thank You for making this world a better place!
-                                </p>
-                            </td>
-                        </tr>
-                        <!--========== ROW 1 ENDS =========-->
-                        <tr>
-                            <td style="vertical-align: middle" colspan="1">
-                                <h6 class="my-2">8 May 2020 12:36</h6>
-                                <p>
-                                    <a href="" class="mt-1" hidden>
-                                        <img src="static/assets/img/profile1.jpg"
-                                             class="profile-pic" style="width: 20px" hidden>
-                                        &nbsp
-                                        Mike Richards
-                                    </a>
+                <div class="form-group mb-3  volunteer-field">
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1">First Name</label>
+                            <input type="text" class="form-control" placeholder="First Name" aria-label="Username"
+                                   aria-describedby="basic-addon1" value="Alex">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last Name"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" value="Merchado">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3 ">
+                    <label for="exampleInputEmail1">Email Id</label>
+                    <input type="text" class="form-control" placeholder="Email Id" aria-label="Username"
+                           aria-describedby="basic-addon1" value="alex@example.com">
+                </div>
+                <div class="form-group mb-3 volunteer-field">
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1">Age</label>
+                            <input type="number" class="form-control" placeholder="Age"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" value="23">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1">Sex</label>
+                            <select class="custom-select" id="inputGroupSelect03">
+                                <option>--------</option>
+                                <option value="1" selected>Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3  volunteer-field">
+                    <div class="row">
+                        <div class="col order-2">
+                            <label for="exampleInputEmail1"hidden>Id No.</label>
+                            <input type="number" class="form-control" placeholder="Id No." aria-label="Username"
+                                   aria-describedby="basic-addon1"hidden>
+                        </div>
+                        <div class="col order-1>
+                            <label for="exampleInputEmail1">Phone No</label>
+                            <input type="tel" class="form-control" placeholder="Phone No" aria-label="Username"
+                                   aria-describedby="basic-addon1" value="1234567890">
+                        </div>
+                    </div>
+                </div>
+                
+                <!---#-->
+                <div class="form-group my-3"hidden>
+                    <label for="exampleInputEmail1">Task Description</label>
+                    <textarea rows="5" class="form-control" aria-label="With textarea"
+                              placeholder="Write something about the task..."></textarea>
+                </div>
+                <!---#-->
 
-                                    Your grievance (No. 123456) has been <strong>escalated</strong> to university level
-                                    by your institue.
-                                    You will be notified about further actions
-                                    <a href="" class="mt-1" hidden>
-                                        Provide clothing to the needy
-                                    </a>
-                                    .
-                                    For any queries, reach out to us at
-                                    <a href="" class="mt-1">
-                                        studgrievred@andhrapradesh.com
-                                    </a>
-                                    and phone no.
-                                    <a href="" class="mt-1">
-                                        1234567890
-                                    </a>
-                                    . Thank You for making this world a better place!
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: middle" colspan="1">
-                                <h6 class="my-2">8 May 2020 12:36</h6>
-                                <p>
-                                    <a href="" class="mt-1" hidden>
-                                        <img src="static/assets/img/profile1.jpg"
-                                             class="profile-pic" style="width: 20px" hidden>
-                                        &nbsp
-                                        Mike Richards
-                                    </a>
-
-                                    Your department has asked for <strong>more information</strong> related to grievance
-                                    (No. 123456).
-                                    <br>Computer Department: We need proof of the incident. You may ask the college
-                                    authorities to provide CCTV footage on our behalf.
-                                    You need to send that footage to us on our email or on this portal.
-                                    <a href="" class="mt-1" hidden>
-                                        Provide clothing to the needy
-                                    </a>
-                                    .
-                                    For any queries, reach out to us at
-                                    <a href="" class="mt-1">
-                                        studgrievred@andhrapradesh.com
-                                    </a>
-                                    and phone no.
-                                    <a href="" class="mt-1">
-                                        1234567890
-                                    </a>
-                                    . Thank You for making this world a better place!
-                                </p>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div style="text-align: center" class=" mb-3 ">
+                    <a href="old_files/ngo_my_tasks.html">
+                        <button class="btn btn-success" style="width: 100%">Update Details</button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container mt-0 pl-lg-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
 
-
-        </div>
-    </div>
-</div>
-
+<!---Page Content Ends--->
 
 <br/><br/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <script>
     $('table button i').click(function () {
@@ -891,10 +651,10 @@ x<!DOCTYPE html>
             $(this).addClass('fa-angle-down');
         }
     });
-
 </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </body>
 
 </html>
+
+
