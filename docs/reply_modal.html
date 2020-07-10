@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="/static/assets/img/favicon.png">
+    <title>
+        Reply Modal URHope - Where Hope Prevails
+    </title>
+
+    <!----Custom Files----->
+    <link href="static/assets/css/custom-css/index.css" rel="stylesheet" />
+    <script src="static/assets/js/custom-js/index.js" type="text/javascript"></script>
+
+
+    <!---JQuery----->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <!---Bootstrap----->
+    <link href="static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-----Fonts----->
+    <link href="https://fonts.googleapis.com/css?family=Akronim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'webapp/Login/Login_v6/fonts/iconic/css/material-design-iconic-font.min.css' %}">
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'webapp/Login/Login_v6/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="static/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+
+<body class="landing-page">
+
+    <!-- Navbar -->
+    <div class="partials_navbar_import"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.partials_navbar_import').load('partials/partial_navbar.html');
+        });
+    </script>
+    <!-- End Navbar -->
+
+    <!-- Page Title -->
+    
+    <!-- End Page Title -->
+
+    <div class="container">
+
+    </div>
+
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col mt-lg-5">
+                <div class="card-custom p-lg-5 step3-table-div">
+
+                    <div class="row mt-2">
+                        <div class="tab-content" id="nav-tabContent" style="width: 100%">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+
+                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter" onclick="
+                                        updateModal(
+                                            {
+                                        'title': 'Token Id : 12345',
+                                        'description': 'Description',
+                                        }
+                                        );">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter" onclick="
+                                    updateModal(
+                                        {
+                                    'title': 'Token Id : 345',
+                                    'description': 'Description',
+                                    }
+                                    );">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter" onclick="
+                                    updateModal(
+                                        {
+                                    'title': 'Token Id : 2345',
+                                    'description': 'Description',
+                                    }
+                                    );">
+                                    View
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header pb-0" style="border-bottom: none">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body p-3">
+                    <div class="initiative-heading px-2">
+                        <h4 class="font-weight-bold link-modal-title">Text1</h4>
+
+                    </div>
+                    <div class="initiative-description px-2">
+                        <p class="text-muted mb-0 link-modal-description">Text2</p>
+                    </div>
+
+                    <div class="form-group my-3 ">
+                        <label for="exampleInputEmail1">Reply</label>
+                        <textarea rows="5" class="form-control" aria-label="With textarea"
+                                  placeholder="Type Your Text Here..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Upload files (if any)</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div style="text-align: center" class=" mb-3 ">
+                        <button type="button" class="btn btn-success" style="width: 100%"><i class="fa fa-paper-plane"
+                            aria-hidden="true"></i> &nbsp Send
+                    </button>
+                        <button class="btn btn-outline-primary" style="width: 100%"hidden>Submit</button>
+                    </div>
+
+                </div>
+                
+                <div class="modal-footer align-middle justify-content-center pt-0" style="border-top: none">
+                    <button type="button" class="btn btn-success"hidden><i class="fa fa-share-alt"
+                            aria-hidden="true"></i> Send
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End  Modal -->
+
+
+    <br /><br />
+
+    <!-- Footer -->
+    <div class="partials_footer"></div>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.partials_footer').load('partials/partial_footer.html');
+            $("select.filter").change(function () {
+                var selectedOption = $(this).children("option:selected").val();
+                if (selectedOption === 'Choose Filter...') {
+                    var value = '';
+                    $(".filter-this-table tbody > tr ").filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                } else {
+                    var value = selectedOption.toLowerCase();
+                    $(".filter-this-table tbody > tr ").filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                }
+            });
+        });
+
+        function updateModal(d) {
+            $('.link-modal-title').html(d['title']);
+            $('.link-modal-description').html(d['description']);
+            $('.link-modal-eligibility').html(d['eligibility']);
+            $('.link-modal-documents').html(d['documents']);
+            $('.link-modal-duration').html(d['duration']);
+            var contact = '';
+            console.log(d['phone']);
+            for (var i = 0; i < d['phone'].length; i++)
+                contact += "<a href='tel:" + d['phone'][i] + "'> <button class='btn btn-sm btn-outline-primary my-1'>" + d['phone'][i] + "</button> </a>";
+            $('.link-modal-contact').html(contact);
+            $('.link-modal-sources').html("<a href='" + d['source'] + "'>View Source</a>");
+        }
+
+    //Search Input Field (DONOT REMOVE)
+        /*
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $(".step3-table tbody > tr ").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+        */
+
+
+    </script>
+    <!--
+End
+Footer -->
+
+    <!--   Core JS Files   -->
+    <script src="/static/assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="/static/assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="/static/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="/static/assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="/static/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <script src="/static/assets/js/plugins/moment.min.js"></script>
+    <script src="/static/assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+    <script src="/static/assets/js/plugins/bootstrap-datepicker.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $.getScript('//cdn.jsdelivr.net/isotope/1.5.25/jquery.isotope.min.js', function () {
+
+            /* activate jquery isotope */
+            $('#posts').imagesLoaded(function () {
+                $('#posts').isotope({
+                    itemSelector: '.item'
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
