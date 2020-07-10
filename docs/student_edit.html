@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>
-        Student profile
+        Student profile edit
     </title>
 
     <!----Custom Files----->
@@ -69,7 +69,7 @@
     <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
         <div class="row align-items-center" align="center">
             <div class="col">
-                <h1 class="font-weight-bold" style="color:#252766; text-align: left">My Profile</h1>
+                <h1 class="font-weight-bold" style="color:#252766; text-align: left">Edit Profile</h1>
             </div>
             <div class="col justify-content-end d-none d-lg-block">
                 <h6 class="font-weight-bold" style="color:#252766; text-align: end">
@@ -100,7 +100,7 @@
                 <div class="form-group mb-3 ">
                     <label for="exampleInputEmail1">Name</label>
                     <input type="text" class="form-control" placeholder="Mike Richards" aria-label="Username"
-                           aria-describedby="basic-addon1" disabled>
+                           aria-describedby="basic-addon1">
                 </div>
                 <div class="form-group mb-3 ">
                     <label for="exampleInputEmail1">Email</label>
@@ -110,7 +110,7 @@
                 <div class="form-group my-3" hidden>
                     <label for="exampleInputEmail1">Address</label>
                     <textarea rows="3" class="form-control" aria-label="With textarea"
-                              placeholder="564 E. Manor Station Lane Minot, ND 58701" disabled></textarea>
+                              placeholder="564 E. Manor Station Lane Minot, ND 58701"></textarea>
                 </div>
                 <div class="form-group mb-3  volunteer-field">
                     <div class="row">
@@ -122,7 +122,7 @@
                         <div class="col">
                             <label for="exampleInputEmail1">Phone No</label>
                             <input type="tel" class="form-control" placeholder="1234567890" aria-label="Username"
-                                   aria-describedby="basic-addon1" disabled>
+                                   aria-describedby="basic-addon1">
                         </div>
                     </div>
                 </div>
@@ -131,11 +131,11 @@
                         <div class="col">
                             <label for="exampleInputEmail1">Age</label>
                             <input type="number" class="form-control" placeholder="27" aria-label="Username"
-                                   aria-describedby="basic-addon1" style="border-radius: 5px" disabled>
+                                   aria-describedby="basic-addon1" style="border-radius: 5px">
                         </div>
                         <div class="col">
                             <label for="exampleInputEmail1">Sex</label>
-                            <select class="custom-select" id="inputGroupSelect03" style="border-radius: 5px" disabled>
+                            <select class="custom-select" id="inputGroupSelect03" style="border-radius: 5px">
                                 <option>--- Sex ---</option>
                                 <option value="1" selected>Male</option>
                                 <option value="2">Female</option>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="form-group my-3" hidden>
                     <label for="exampleInputEmail1">About Me</label>
-                    <textarea disabled rows="5" class="form-control" aria-label="With textarea"
+                    <textarea rows="5" class="form-control" aria-label="With textarea"
                               placeholder="Write something about you...">Mike Richards is a 27-year-old personal trainer who enjoys badminton, yoga and vandalising bus stops. He is entertaining and energetic, but can also be very dull and a bit unstable.</textarea>
                 </div>
                 <div class="form-group mb-3  volunteer-field">
@@ -165,35 +165,62 @@
                     <input type="text" class="form-control" placeholder="Computer" aria-label="Username"
                            aria-describedby="basic-addon1" disabled>
                 </div>
+                <div style="text-align: center" class=" mb-3 ">
+                    <a href="volunteer_profile_view.html">
+                        <button class="btn btn-success" style="width: 100%">Save Changes</button>
+                    </a>
+                </div>
             </div>
 
-           
+            <div class="card-custom mt-2 help-card " hidden>
+                <h6 class="my-3" style="">Change Password</h6>
+                <div class="form-group mb-3 ">
+
+                    <input type="password" class="form-control" placeholder="Current Password" aria-label="Username"
+                           aria-describedby="basic-addon1">
+                </div>
+                <div class="form-group mb-3 ">
+                    <div class="row">
+                        <div class="col">
+
+                            <input type="password" class="form-control" placeholder="New Password"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px">
+                        </div>
+                        <div class="col">
+
+                            <input type="password" class="form-control" placeholder="Confirm Password"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px">
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center" class=" mb-3 ">
+                    <button class="btn btn-danger" style="width: 100%">Change Password</button>
+                </div>
+            </div>
         </div>
 
         <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-md-1 order-1">
-            <div class="card-custom mt-2 mt-lg-0 help-card">
+            <div class="card-custom mt-2 mt-lg-0 help-card ">
                 <div class="profile-placeholder mb-3"><img src="static/assets/img/profile1.jpg"
-                                                           class="profile-pic"></div>
-                <div style="text-align: center" class=" mb-3  ">
-                    <h5 class="font-weight-bold card-custom-title mb-0">Mike Richards</h5>
-                    <span class="badge badge-secondary" style="background-color:#252766">Student</span>
-                </div>
-                <div style="text-align: center" class=" mb-2 " hidden>
-                    <a href="volunteer_all_tasks.html">
-                        <button class="btn btn-outline-primary">All Tasks</button>
-                    </a>
+                                                           class="profile-pic">
                 </div>
                 <div style="text-align: center" class="
                          mb-3">
-                    <a href="student_edit.html">
-                        <button class="btn btn-dark">Edit Profile &nbsp<i
+                    <a href="volunteer_profile_edit.html">
+                        <button class="btn btn-dark">Change Profile Picture &nbsp<i
                                 style=" font-size: small"
                                 class="fa fa-pencil"
                                 aria-hidden="true"></i></button>
                     </a>
                 </div>
+                <div style="text-align: center" class=" mb-3  ">
+                    <h5 class="card-custom-title font-weight-bold">Mike Richards</h5>
+                    <span class="badge badge-secondary" style="background-color:#252766">Student</span>
+                </div>
             </div>
-            <div class="card-custom mt-2 help-card">
+            <div class="card-custom mt-2 help-card ">
                 <h6 class="my-3" style="">Change Password</h6>
                 <div class="form-group mb-3 ">
 
@@ -222,7 +249,6 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 <!-- Page Content Ends-->
 
