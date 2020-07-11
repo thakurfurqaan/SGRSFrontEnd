@@ -86,8 +86,57 @@
 
 <!---Page Content Starts--->
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+<!--Reply Modal -->
+<div class="modal fade" id="Replymodal" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header pb-0" style="border-bottom: none">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="modal-body p-3">
+            <div class="initiative-heading px-2">
+                <h4 class="font-weight-bold link-modal-title">Text1</h4>
+
+            </div>
+            <div class="initiative-description px-2">
+                <p class="text-muted mb-0 link-modal-description">Text2</p>
+            </div>
+
+            <div class="form-group my-3 ">
+                <label for="exampleInputEmail1">Reply</label>
+                <textarea rows="5" class="form-control" aria-label="With textarea"
+                          placeholder="Type Your Text Here..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Upload files (if any)</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <div style="text-align: center" class=" mb-3 ">
+                <button type="button" class="btn btn-success" style="width: 100%"><i class="fa fa-paper-plane"
+                    aria-hidden="true"></i> &nbsp Send
+            </button>
+                <button class="btn btn-outline-primary" style="width: 100%"hidden>Submit</button>
+            </div>
+
+        </div>
+        
+        <div class="modal-footer align-middle justify-content-center pt-0" style="border-top: none">
+            <button type="button" class="btn btn-success"hidden><i class="fa fa-share-alt"
+                    aria-hidden="true"></i> Send
+            </button>
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+<!--End  Modal -->
+
+<!--View message Modal -->
+<div class="modal fade" id="Viewmodal" tabindex="-1" role="dialog"
 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -159,8 +208,16 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             </div>
         </div>
 
-        <div class="modal-footer align-middle justify-content-center pt-0" style="border-top: none">
-            <button type="button" class="btn btn-success"><i class="fa fa-reply" aria-hidden="true"></i> Reply
+        <div class="modal-footer align-middle justify-content-center pt-0">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-dismiss="modal"
+                                    data-target="#Replymodal" onclick="
+                                        messageModal(
+                                            {
+                                        'title': 'Token Id : 12345',
+                                        'description': 'Description',
+                                        }
+                                        );" >
+                                    <i class="fa fa-reply" aria-hidden="true"></i> Reply
             </button>
             <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
         </div>
@@ -367,8 +424,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
                                             <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                data-target="#exampleModalCenter" onclick="
-                                                updateModal({
+                                                data-target="#Viewmodal" onclick="
+                                                fun_Modal({
                                                 'title': 'Token Id : 12345',
                                                 'description': 'Description',
                                                 });">View
@@ -548,8 +605,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
                                             <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                data-target="#exampleModalCenter" onclick="
-                                                updateModal({
+                                                data-target="#Viewmodal" onclick="
+                                                fun_Modal({
                                                 'title': 'Token Id : 12345',
                                                 'description': 'Description',
                                                 });">View
@@ -728,8 +785,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
                                             <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                data-target="#exampleModalCenter" onclick="
-                                                updateModal({
+                                                data-target="#Viewmodal" onclick="
+                                                fun_Modal({
                                                 'title': 'Token Id : 12345',
                                                 'description': 'Description',
                                                 });">View
@@ -907,9 +964,13 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         </td>
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
-                                                <a href="#">
-                                                    <button class="btn btn-primary mt-1">View Messages</button>
-                                                </a>
+                                            <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
+                                                data-target="#exampleModalCenter" onclick="
+                                                fun_Modal({
+                                                'title': 'Token Id : 12345',
+                                                'description': 'Description',
+                                                });">View
+                                            </button>
                                                 <a href="#">
                                                     <button class="btn btn-success mt-1 ml-2">Approve</button>
                                                 </a>
@@ -1085,8 +1146,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
                                             <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                data-target="#exampleModalCenter" onclick="
-                                                updateModal({
+                                                data-target="#Viewmodal" onclick="
+                                                fun_Modal({
                                                 'title': 'Token Id : 12345',
                                                 'description': 'Description',
                                                 });">View
@@ -1239,8 +1300,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         }
     });
 
-    //Modal function//
-    function updateModal(d) {
+    // Modal function//
+    function fun_Modal(d) {
             $('.link-modal-title').html(d['title']);
             $('.link-modal-description').html(d['description']);
             $('.link-modal-eligibility').html(d['eligibility']);
