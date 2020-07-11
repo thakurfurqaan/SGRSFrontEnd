@@ -71,6 +71,23 @@
             <div class="col">
                 <h1 class="font-weight-bold" style="color:#252766; text-align: left">Your Dashboard</h1>
             </div>
+<!--            <div class="col justify-content-end d-none d-lg-block" hidden>-->
+<!--                <select onchange="doGTranslate(this);">-->
+<!--                    <option class="lang notranslate" value="en|en">English</option>-->
+<!--                    <option class="lang notranslate" value="en|ar">Arabic</option>-->
+<!--                    <option class="lang notranslate" value="en|hi">Hindi</option>-->
+<!--                    <option class="lang notranslate" value="en|fa">Persian</option>-->
+<!--                    <option class="lang notranslate" value="en|ur">Urdu</option>-->
+<!--                    <option class="lang notranslate" value="en|bn">Bengali</option>-->
+<!--                    <option class="lang notranslate" value="en|gu">Gujarati</option>-->
+<!--                    <option class="lang notranslate" value="en|kn">Kannada</option>-->
+<!--                    <option class="lang notranslate" value="en|mr">Marathi</option>-->
+<!--                    <option class="lang notranslate" value="en|ne">Nepali</option>-->
+<!--                    <option class="lang notranslate" value="en|pa">Punjabi</option>-->
+<!--                    <option class="lang notranslate" value="en|ta">Tamil</option>-->
+<!--                    <option class="lang notranslate" value="en|te">Telugu</option>-->
+<!--                </select>-->
+<!--            </div>-->
             <div class="col justify-content-end d-none d-lg-block">
                 <h6 class="font-weight-bold" style="color:#252766; text-align: end">
                     <img src="static/assets/img/student_dp.jpg" class="profile-pic-dashboard" height="50">
@@ -88,80 +105,81 @@
 
 <!--Reply Modal -->
 <div class="modal fade" id="Replymodal" tabindex="-1" role="dialog"
-aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-        <div class="modal-header pb-0" style="border-bottom: none">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
-        <div class="modal-body p-3">
-            <div class="initiative-heading px-2">
-                <h4 class="font-weight-bold link-modal-title">Text1</h4>
-
-            </div>
-            <div class="initiative-description px-2">
-                <p class="text-muted mb-0 link-modal-description">Text2</p>
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header pb-0" style="border-bottom: none">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
 
-            <div class="form-group my-3 ">
-                <label for="exampleInputEmail1">Reply</label>
-                <textarea rows="5" class="form-control" aria-label="With textarea"
-                          placeholder="Type Your Text Here..."></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlFile1">Upload files (if any)</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </div>
-            <div style="text-align: center" class=" mb-3 ">
-                <button type="button" class="btn btn-success" style="width: 100%"><i class="fa fa-paper-plane"
-                    aria-hidden="true"></i> &nbsp Send
-            </button>
-                <button class="btn btn-outline-primary" style="width: 100%"hidden>Submit</button>
+            <div class="modal-body card-custom p-3" style="box-shadow: none !important;">
+                <div class="initiative-heading px-2">
+                    <h4 class="font-weight-bold link-modal-title">Text1</h4>
+
+                </div>
+                <div class="initiative-description px-2">
+                    <p class="text-muted mb-0 link-modal-description">Text2</p>
+                </div>
+
+                <div class="form-group my-3 ">
+                    <label for="exampleInputEmail1">Reply</label>
+                    <textarea rows="5" class="form-control" aria-label="With textarea"
+                              placeholder="Type Your Text Here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Upload files (if any)</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <div style="text-align: center" class=" mb-3 ">
+                    <button type="button" class="btn btn-success" style="width: 100%"><i class="fa fa-paper-plane"
+                                                                                         aria-hidden="true"></i> &nbsp
+                        Send
+                    </button>
+                    <button class="btn btn-outline-primary" style="width: 100%" hidden>Submit</button>
+                </div>
+
             </div>
 
-        </div>
-        
-        <div class="modal-footer align-middle justify-content-center pt-0" style="border-top: none">
-            <button type="button" class="btn btn-success"hidden><i class="fa fa-share-alt"
-                    aria-hidden="true"></i> Send
-            </button>
-            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+            <div class="modal-footer align-middle justify-content-center pt-0" style="border-top: none" hidden>
+                <button type="button" class="btn btn-success" hidden><i class="fa fa-share-alt"
+                                                                        aria-hidden="true"></i> Send
+                </button>
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <!--End  Modal -->
 
 <!--View message Modal -->
 <div class="modal fade" id="Viewmodal" tabindex="-1" role="dialog"
-aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-        <div class="modal-header pb-0" style="border-bottom: none">
-            <h5 class="modal-title mt-2 mb-1 font-weight-bold" style="">All Messages</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
-        <div class="modal-body px-4 py-2">
-            <div class="initiative-heading px-2"hidden>
-                <h4 class="font-weight-bold link-modal-title">Text1</h4>
-
-            </div>
-            <div class="initiative-description px-2" hidden>
-                <p class="text-muted mb-0 link-modal-description">Text2</p>
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header pb-0" style="border-bottom: none">
+                <h5 class="modal-title mt-2 mb-1 font-weight-bold" style="">All Messages</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-12 col-12 px-lg-0 order-lg-1">
+            <div class="modal-body px-4 py-2">
+                <div class="initiative-heading px-2" hidden>
+                    <h4 class="font-weight-bold link-modal-title">Text1</h4>
 
-                    <div style="height:300px; overflow-y:scroll">
-                        <table class="table filter-this-table">
-                            <tbody>
+                </div>
+                <div class="initiative-description px-2" hidden>
+                    <p class="text-muted mb-0 link-modal-description">Text2</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-12 px-lg-0 order-lg-1">
+
+                        <div style="height:300px; overflow-y:scroll">
+                            <table class="table filter-this-table">
+                                <tbody>
                                 <tr>
                                     <td style="vertical-align: middle" colspan="1">
                                         <table class="table filter-this-table">
@@ -201,35 +219,35 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 </tr>
 
                                 <!--========== ROW 1 ENDS =========-->
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal-footer align-middle justify-content-center pt-0">
-            <button type="button" class="btn btn-success" data-toggle="modal" data-dismiss="modal"
-                                    data-target="#Replymodal" onclick="
+            <div class="modal-footer align-middle justify-content-center pt-0">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-dismiss="modal"
+                        data-target="#Replymodal" onclick="
                                         messageModal(
                                             {
                                         'title': 'Token Id : 12345',
                                         'description': 'Description',
                                         }
-                                        );" >
-                                    <i class="fa fa-reply" aria-hidden="true"></i> Reply
-            </button>
-            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                                        );">
+                    <i class="fa fa-reply" aria-hidden="true"></i> Reply
+                </button>
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <!--End  Modal -->
 
 <div class="container mb-lg-3 mt-lg-2 pl-lg-5">
     <div class="row justify-content-center">
         <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="options" onclick="location.href='stud_grievance.html';" style="cursor: pointer">
+            <div class="options" onclick="location.href='add_grievance.html';" style="cursor: pointer">
                 <div>
                     <img src="static/assets/img/tasks.jpg" class="options-img"/>
                 </div>
@@ -240,7 +258,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="options" onclick="location.href='students.html';" style="cursor: pointer">
+            <div class="options" onclick="location.href='view_profile.html';" style="cursor: pointer">
                 <div>
                     <img src="static/assets/img/account.jpg" class="options-img"/>
                 </div>
@@ -250,7 +268,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="options" onclick="location.href='stud_mygrie.html';" style="cursor: pointer">
+            <div class="options" onclick="location.href='grievances_list.html';" style="cursor: pointer">
                 <div>
                     <img src="static/assets/img/feedback.jpg" class="options-img"/>
                 </div>
@@ -284,45 +302,45 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <h5 class="my-3 card-custom-title" style="">All Grievances</h5>
                     </div>
                     <div class=" col-md-3 col-sm-6 col-6 btn-group p-1" hidden>
-                            <button type="button" class="btn btn-sm btn-light"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false" style="text-transform: capitalize">
-                                <select
-                                        class="custom-select-sm custom-select filter">
-                                    <option selected>Choose...</option>
-                                    <option value="University">University</option>
-                                    <option value="Institute">Institute</option>
-                                    <option value="Department">Department</option>
-                                </select>
-                            </button>
-                        </div>
-                        <div class=" col-md-3 col-sm-6 col-6 btn-group p-1" hidden>
-                            <button type="button" class="btn btn-sm btn-light"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false" style="text-transform: capitalize">
-                                <select
-                                        class="custom-select-sm custom-select filter">
-                                    <option selected>Choose...</option>
-                                    <option value="University">University</option>
-                                    <option value="Institute">Institute</option>
-                                    <option value="Department">Department</option>
-                                </select>
-                            </button>
-                        </div>
-                        <div class=" col-md-2 col-sm-12 col-xs-12"hidden>
-                            <input class="w-100 mb-1" style="height: 32px;" type="search" placeholder="Search">
-                        </div>
-                        <div style="text-align: center" class=" col-2 mb-1 p-0"hidden>
-                          <a href="#">
-                             <button class="btn btn-dark">Edit Draft &nbsp<i
-                                style=" font-size: small"
-                                class="fa fa-pencil"
-                                aria-hidden="true"></i></button>
-                          </a>
-                       </div>
-                    
+                        <button type="button" class="btn btn-sm btn-light"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false" style="text-transform: capitalize">
+                            <select
+                                    class="custom-select-sm custom-select filter">
+                                <option selected>Choose...</option>
+                                <option value="University">University</option>
+                                <option value="Institute">Institute</option>
+                                <option value="Department">Department</option>
+                            </select>
+                        </button>
+                    </div>
+                    <div class=" col-md-3 col-sm-6 col-6 btn-group p-1" hidden>
+                        <button type="button" class="btn btn-sm btn-light"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false" style="text-transform: capitalize">
+                            <select
+                                    class="custom-select-sm custom-select filter">
+                                <option selected>Choose...</option>
+                                <option value="University">University</option>
+                                <option value="Institute">Institute</option>
+                                <option value="Department">Department</option>
+                            </select>
+                        </button>
+                    </div>
+                    <div class=" col-md-2 col-sm-12 col-xs-12" hidden>
+                        <input class="w-100 mb-1" style="height: 32px;" type="search" placeholder="Search">
+                    </div>
+                    <div style="text-align: center" class=" col-2 mb-1 p-0">
+                        <a href="grievances_list.html">
+                            <button class="btn btn-dark">View All &nbsp<i
+                                    style=" font-size: small"
+                                    class="fa fa-pencil"
+                                    aria-hidden="true" hidden></i></button>
+                        </a>
+                    </div>
+
                     <table class="table step3-table filter-this-table">
                         <thead hidden>
                         <tr>
@@ -345,7 +363,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">College broken</p>
+                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">College
+                                    broken</p>
                                 <h5 class="d-none d-md-block" style="color:#252766">College broken</h5>
                                 <p class="m-0 d-none d-md-block"><b>Category :</b> Institute</p>
                                 <p class="m-0 d-none d-md-block"><b>Sub-Category :</b> Infrastruture</p>
@@ -442,12 +461,12 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <td colspan="2">
                                             <div class="initiative-description">
                                                 <p class="text-muted" align="left">XYZ College is not working properly.
-                                                    No facilities are provided to students. 
+                                                    No facilities are provided to students.
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class = "d-md-none">
+                                    <tr class="d-md-none">
                                         <td colspan="1">
                                             <p class="mt-1">Status</p>
                                         </td>
@@ -465,7 +484,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
                                                 <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                    data-target="#Viewmodal" onclick="
+                                                        data-target="#Viewmodal" onclick="
                                                     fun_Modal({
                                                     'title': 'Token Id : 12345',
                                                     'description': 'Description',
@@ -477,11 +496,11 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                 <a href="#">
                                                     <button class="btn btn-danger mt-1 ml-2">Discard</button>
                                                 </a>
-                                                <a href="#">
+                                                <a href="edit_grievance.html">
                                                     <button class="btn btn-dark mt-1 ml-2">Edit Draft &nbsp<i
-                                                       style=" font-size: small"
-                                                       class="fa fa-pencil"
-                                                       aria-hidden="true"></i></button>
+                                                            style=" font-size: small"
+                                                            class="fa fa-pencil"
+                                                            aria-hidden="true"></i></button>
                                                 </a>
                                             </div>
                                         </td>
@@ -502,7 +521,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">Postpone exam</p>
+                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">Postpone
+                                    exam</p>
                                 <h5 class="d-none d-md-block" style="color:#252766">Postpone exam</h5>
                                 <p class="m-0 d-none d-md-block"><b>Category :</b> Department</p>
                                 <p class="m-0 d-none d-md-block"><b>Sub-Category :</b> Examination</p>
@@ -548,7 +568,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                             </div>
                                         </td>
                                     </tr>
-                                    
+
                                     <tr class="d-md-none">
                                         <td colspan="1">
                                             Subject
@@ -570,7 +590,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                 </p>
                                             </div>
                                         </td>
-                                    </tr>                                    
+                                    </tr>
                                     <tr class="d-md-none">
                                         <td colspan="1">
                                             Subcategory
@@ -623,12 +643,13 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         </td>
                                         <td colspan="2">
                                             <div class="initiative-description">
-                                                <p class="text-muted" align="left">Due to ongoing pandemic postpone the unit test
+                                                <p class="text-muted" align="left">Due to ongoing pandemic postpone the
+                                                    unit test
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class = "d-md-none">
+                                    <tr class="d-md-none">
                                         <td colspan="1">
                                             <p class="mt-1">Status</p>
                                         </td>
@@ -646,7 +667,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
                                                 <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                    data-target="#Viewmodal" onclick="
+                                                        data-target="#Viewmodal" onclick="
                                                     fun_Modal({
                                                     'title': 'Token Id : 12345',
                                                     'description': 'Description',
@@ -660,9 +681,9 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                 </a>
                                                 <a href="#">
                                                     <button class="btn btn-dark mt-1 ml-2">Edit Draft &nbsp<i
-                                                       style=" font-size: small"
-                                                       class="fa fa-pencil"
-                                                       aria-hidden="true"></i></button>
+                                                            style=" font-size: small"
+                                                            class="fa fa-pencil"
+                                                            aria-hidden="true"></i></button>
                                                 </a>
                                             </div>
                                         </td>
@@ -681,7 +702,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">Absent for exam</p>
+                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">Absent for
+                                    exam</p>
                                 <h5 class="d-none d-md-block" style="color:#252766">Absent for exam</h5>
                                 <p class="m-0 d-none d-md-block"><b>Category :</b> Department</p>
                                 <p class="m-0 d-none d-md-block"><b>Sub-Category :</b> Examination</p>
@@ -766,9 +788,11 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         </td>
                                         <td colspan="2">
                                             <div class="initiative-description">
-                                                <p class="text-muted" align="left">Due to Malaria I was not able to attend unit test.
-                                                    I am attaching my the medical certificate.Please consider my request and 
-                                                    guide me for further steps. 
+                                                <p class="text-muted" align="left">Due to Malaria I was not able to
+                                                    attend unit test.
+                                                    I am attaching my the medical certificate.Please consider my request
+                                                    and
+                                                    guide me for further steps.
                                                 </p>
                                             </div>
                                         </td>
@@ -808,7 +832,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                             </a>
                                         </td>
                                     </tr>
-                                    <tr class = "d-md-none">
+                                    <tr class="d-md-none">
                                         <td colspan="1">
                                             <p class="mt-1">Status</p>
                                         </td>
@@ -826,7 +850,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
                                                 <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                    data-target="#Viewmodal" onclick="
+                                                        data-target="#Viewmodal" onclick="
                                                     fun_Modal({
                                                     'title': 'Token Id : 12345',
                                                     'description': 'Description',
@@ -839,19 +863,19 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                     <button class="btn btn-danger mt-1 ml-2">Discard</button>
                                                 </a>
                                                 <a href="#">
-                                                       <button class="btn btn-dark mt-1 ml-2">Edit Draft &nbsp<i
-                                                          style=" font-size: small"
-                                                          class="fa fa-pencil"
-                                                          aria-hidden="true"></i></button>
+                                                    <button class="btn btn-dark mt-1 ml-2">Edit Draft &nbsp<i
+                                                            style=" font-size: small"
+                                                            class="fa fa-pencil"
+                                                            aria-hidden="true"></i></button>
                                                 </a>
-                                                
+
                                             </div>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                         </tr>
-                        <!--========== ROW 3 ENDS =========-->    
+                        <!--========== ROW 3 ENDS =========-->
                         <!--========== ROW 4 STARTS =========-->
 
                         <tr aria-rowspan="2" class="card-row">
@@ -863,7 +887,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">College broken</p>
+                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">College
+                                    broken</p>
                                 <h5 class="d-none d-md-block" style="color:#252766">College broken</h5>
                                 <p class="m-0 d-none d-md-block"><b>Category :</b> Institute</p>
                                 <p class="m-0 d-none d-md-block"><b>Sub-Category :</b></p>
@@ -983,12 +1008,12 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         </td>
                                         <td colspan="2">
                                             <div class="initiative-description">
-                                                <p class="text-muted" align="left"> 
+                                                <p class="text-muted" align="left">
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class = "d-md-none">
+                                    <tr class="d-md-none">
                                         <td colspan="1">
                                             <p class="mt-1">Status</p>
                                         </td>
@@ -1006,7 +1031,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
                                                 <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                    data-target="#Viewmodal" onclick="
+                                                        data-target="#Viewmodal" onclick="
                                                     fun_Modal({
                                                     'title': 'Token Id : 12345',
                                                     'description': 'Description',
@@ -1020,10 +1045,10 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                 </a>
                                                 <a href="#">
                                                     <button class="btn btn-dark mt-1 ml-2">Edit Draft &nbsp<i
-                                                       style=" font-size: small"
-                                                       class="fa fa-pencil"
-                                                       aria-hidden="true"></i></button>
-                                               </a>
+                                                            style=" font-size: small"
+                                                            class="fa fa-pencil"
+                                                            aria-hidden="true"></i></button>
+                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -1043,7 +1068,8 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">Postpone exam</p>
+                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">Postpone
+                                    exam</p>
                                 <h5 class="d-none d-md-block" style="color:#252766">Postpone exam</h5>
                                 <p class="m-0 d-none d-md-block"><b>Category :</b> Department</p>
                                 <p class="m-0 d-none d-md-block"><b>Sub-Category :</b> Examination</p>
@@ -1089,7 +1115,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                             </div>
                                         </td>
                                     </tr>
-                                    
+
                                     <tr class="d-md-none">
                                         <td colspan="1">
                                             Subject
@@ -1111,7 +1137,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                 </p>
                                             </div>
                                         </td>
-                                    </tr>                                    
+                                    </tr>
                                     <tr class="d-md-none">
                                         <td colspan="1">
                                             Subcategory
@@ -1164,12 +1190,13 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         </td>
                                         <td colspan="2">
                                             <div class="initiative-description">
-                                                <p class="text-muted" align="left">Due to ongoing pandemic postpone the unit test
+                                                <p class="text-muted" align="left">Due to ongoing pandemic postpone the
+                                                    unit test
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class = "d-md-none">
+                                    <tr class="d-md-none">
                                         <td colspan="1">
                                             <p class="mt-1">Status</p>
                                         </td>
@@ -1187,7 +1214,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
                                                 <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                    data-target="#Viewmodal" onclick="
+                                                        data-target="#Viewmodal" onclick="
                                                     fun_Modal({
                                                     'title': 'Token Id : 12345',
                                                     'description': 'Description',
@@ -1201,10 +1228,10 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                 </a>
                                                 <a href="#">
                                                     <button class="btn btn-dark mt-1 ml-2">Edit Draft &nbsp<i
-                                                       style=" font-size: small"
-                                                       class="fa fa-pencil"
-                                                       aria-hidden="true"></i></button>
-                                                </a> 
+                                                            style=" font-size: small"
+                                                            class="fa fa-pencil"
+                                                            aria-hidden="true"></i></button>
+                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -1217,7 +1244,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     </table>
                 </div>
             </div>
-            
+
             <div class="card-custom mt-4 help-card" hidden>
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
@@ -1382,26 +1409,26 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <tr>
                             <td style="vertical-align: middle" colspan="1">
                                 <h6 class="my-2">8 May 2020 12:36</h6>
-                                    <p>Grievance (No. 123456) has been <strong>approved</strong></p>
-                                
+                                <p>Grievance (No. 123456) has been <strong>approved</strong></p>
+
                             </td>
                         </tr>
                         <tr>
                             <td style="vertical-align: middle" colspan="1">
                                 <h6 class="my-2">8 May 2020 12:36</h6>
-                                    <p>Grievance (No. 123456) has been <strong>approved</strong></p>
+                                <p>Grievance (No. 123456) has been <strong>approved</strong></p>
                             </td>
                         </tr>
                         <tr>
                             <td style="vertical-align: middle" colspan="1">
                                 <h6 class="my-2">8 May 2020 12:36</h6>
-                                    <p>Grievance (No. 123456) has been <strong>approved</strong></p>
+                                <p>Grievance (No. 123456) has been <strong>approved</strong></p>
                             </td>
                         </tr>
                         <tr>
                             <td style="vertical-align: middle" colspan="1">
                                 <h6 class="my-2">8 May 2020 12:36</h6>
-                                    <p>Grievance (No. 123456) has been <strong>approved</strong></p>
+                                <p>Grievance (No. 123456) has been <strong>approved</strong></p>
                             </td>
                         </tr>
                         <tr hidden>
@@ -1472,18 +1499,18 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             </div>
             <div class="card-custom mt-3 help-card">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col" hidden>
-                        <h5 class="my-3 card-custom-title" style="">My Tasks</h5>
+                    <div class="col">
+                        <h5 class="my-3 card-custom-title" style="">Stats</h5>
                     </div>
                     <table class="table step3-table filter-this-table">
-                    <thead>
-                        <img src="static/assets/img/Piechart.jpeg"  style="width: 100%;">
-                                <div>
-                                    <a href="#">
-                                        <button class="btn btn-success mt-2">View Charts</button>
-                                    </a>
-                                </div>
-                    </thead>
+                        <thead>
+                        <img src="static/assets/img/Piechart.jpeg" style="width: 100%;">
+                        <div>
+                            <a href="all_charts.html">
+                                <button class="btn btn-dark mt-2">View All Charts</button>
+                            </a>
+                        </div>
+                        </thead>
                     </table>
                 </div>
             </div>
@@ -1503,6 +1530,15 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 
 <br/><br/>
 
+<!-- Footer -->
+<div class="partials_footer"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.partials_footer').load('partials/partial_footer.html');
+    });
+</script>
+<!-- End Footer -->
+
 <script>
     $('table button i').click(function () {
         if ($(this).hasClass('fa-angle-down')) {
@@ -1514,22 +1550,97 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         }
     });
 
-     // Modal function//
-     function fun_Modal(d) {
-            $('.link-modal-title').html(d['title']);
-            $('.link-modal-description').html(d['description']);
-            $('.link-modal-eligibility').html(d['eligibility']);
-            $('.link-modal-documents').html(d['documents']);
-            $('.link-modal-duration').html(d['duration']);
-            var contact = '';
-            console.log(d['phone']);
-            for (var i = 0; i < d['phone'].length; i++)
-                contact += "<a href='tel:" + d['phone'][i] + "'> <button class='btn btn-sm btn-outline-primary my-1'>" + d['phone'][i] + "</button> </a>";
-            $('.link-modal-contact').html(contact);
-            $('.link-modal-sources').html("<a href='" + d['source'] + "'>View Source</a>");
-        }
+    // Modal function//
+    function fun_Modal(d) {
+        $('.link-modal-title').html(d['title']);
+        $('.link-modal-description').html(d['description']);
+        $('.link-modal-eligibility').html(d['eligibility']);
+        $('.link-modal-documents').html(d['documents']);
+        $('.link-modal-duration').html(d['duration']);
+        var contact = '';
+        console.log(d['phone']);
+        for (var i = 0; i < d['phone'].length; i++)
+            contact += "<a href='tel:" + d['phone'][i] + "'> <button class='btn btn-sm btn-outline-primary my-1'>" + d['phone'][i] + "</button> </a>";
+        $('.link-modal-contact').html(contact);
+        $('.link-modal-sources').html("<a href='" + d['source'] + "'>View Source</a>");
+    }
 
 </script>
+
+<style type="text/css">
+    <!--
+    a.gflag {
+        vertical-align: middle;
+        font-size: 16px;
+        padding: 1px 0;
+        background-repeat: no-repeat;
+        background-image: url(//gtranslate.net/flags/16.png);
+    }
+
+    a.gflag img {
+        border: 0;
+    }
+
+    a.gflag:hover {
+        background-image: url(//gtranslate.net/flags/16a.png);
+    }
+
+    #goog-gt-tt {
+        display: none !important;
+    }
+
+    .goog-te-banner-frame {
+        display: none !important;
+    }
+
+    .goog-te-menu-value:hover {
+        text-decoration: none !important;
+    }
+
+    body {
+        top: 0 !important;
+    }
+
+    #google_translate_element2 {
+        display: none !important;
+    }
+
+    -->
+</style>
+
+<div id="google_translate_element2"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit2() {
+        new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element2');
+    }
+</script>
+<script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+<script type="text/javascript">
+    /* <![CDATA[ */
+    eval(function (p, a, c, k, e, r) {
+        e = function (c) {
+            return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+        };
+        if (!''.replace(/^/, String)) {
+            while (c--) r[e(c)] = k[c] || e(c);
+            k = [function (e) {
+                return r[e]
+            }];
+            e = function () {
+                return '\\w+'
+            };
+            c = 1
+        }
+        ;
+        while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+        return p
+    }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
+    /* ]]> */
+</script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </body>

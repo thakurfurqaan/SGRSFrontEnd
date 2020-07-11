@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>
-        URHope - Where Hope Prevails
+        Edit Profile URHope - Where Hope Prevails
     </title>
 
     <!----Custom Files----->
-    <link href="static/assets/css/custom-css/index.css" rel="stylesheet"/>
+    <link href="../static/assets/css/custom-css/index.css" rel="stylesheet"/>
 
     <!---JQuery----->
 
@@ -21,7 +21,7 @@
             crossorigin="anonymous"></script>
 
     <!---Bootstrap----->
-    <link href="static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link href="../static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -39,7 +39,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <!-- Font Awesome Icons -->
-    <link href="static/assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../static/assets/css/font-awesome.min.css" rel="stylesheet"/>
 
 </head>
 
@@ -71,10 +71,10 @@
             </div>
             <div class="col justify-content-end d-none d-lg-block">
                 <h6 class="font-weight-bold" style="color:#252766; text-align: end">
-                    <img src="static/assets/img/profile2.png" class="profile-pic-dashboard" height="50">
+                    <img src="../static/assets/img/profile2.png" class="profile-pic-dashboard" height="50">
                     &nbsp;
-                    NGO Mumbai
-                    <span class="badge badge-secondary" style="background-color:#252766">NGO</span>
+                    Furqaan Thakur
+                    <span class="badge badge-secondary" style="background-color:#252766">Student</span>
                 </h6>
             </div>
         </div>
@@ -97,35 +97,60 @@
 
                 </div>
                 <div class="form-group mb-3 ">
-                    <label for="exampleInputEmail1">Name</label>
+                    <label for="exampleInputEmail1">Name(S)</label>
                     <input type="text" class="form-control" placeholder="Name" aria-label="Username"
-                           aria-describedby="basic-addon1" value="NGO Mumbai">
+                           aria-describedby="basic-addon1" value="Student Name">
                 </div>
                 <div class="form-group mb-3 ">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" placeholder="Email" aria-label="Username"
-                           aria-describedby="basic-addon1" value="ngomumbai@gmail.com">
+                    <label for="exampleInputEmail1">(University,Institite,Department) Name</label>
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Username"
+                           aria-describedby="basic-addon1" value="University Of Andhra Pradesh">
                 </div>
-                <div class="form-group my-3">
+                <div class="form-group mb-3 ">
+                    <label for="exampleInputEmail1">Email(S,U,I,D)</label>
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Username"
+                           aria-describedby="basic-addon1" value="uniofandhra@gmail.com">
+                </div>
+
+                <div class="form-group mb-3 ">
+                    <label for="exampleInputEmail1">University(S)</label>
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Username"
+                           aria-describedby="basic-addon1" value="University Of Andhra Pradesh">
+                </div>
+                <div class="form-group mb-3 ">
+                    <label for="exampleInputEmail1">Institute(S)</label>
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Username"
+                           aria-describedby="basic-addon1" value="KC College of Engineering">
+                </div>
+                <div class="form-group mb-3 ">
+                    <label for="exampleInputEmail1">Department(S)</label>
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Username"
+                           aria-describedby="basic-addon1" value="Computer Engineering">
+                </div>
+                
+
+                <!--#-->
+                <div class="form-group my-3"hidden>
                     <label for="exampleInputEmail1">Address</label>
                     <textarea rows="3" class="form-control" aria-label="With textarea"
                               placeholder="Address"> 564 E. Manor Station Lane Minot, ND 58701</textarea>
                 </div>
+                <!--#-->
                 <div class="form-group mb-3  volunteer-field">
                     <div class="row">
                         <div class="col">
-                            <label for="exampleInputEmail1">Pincode</label>
+                            <label for="exampleInputEmail1">Enrollment No.(S)</label>
                             <input type="number" class="form-control" placeholder="Pincode" aria-label="Username"
                                    aria-describedby="basic-addon1" value="58701">
                         </div>
                         <div class="col">
-                            <label for="exampleInputEmail1">Phone No</label>
+                            <label for="exampleInputEmail1">Phone No(S,U,I,D)</label>
                             <input type="tel" class="form-control" placeholder="Phone No" aria-label="Username"
                                    aria-describedby="basic-addon1" value="1234567890">
                         </div>
                     </div>
                 </div>
-                <div class="form-group mb-3  volunteer-field">
+                <div class="form-group mb-3  volunteer-field"hidden>
                     <div class="row">
                         <div class="col">
                             <label for="exampleInputEmail1">Registration No</label>
@@ -140,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group mb-3  volunteer-field">
+                <div class="form-group mb-3  volunteer-field"hidden>
                     <div class="row">
                         <div class="col">
                             <label for="exampleInputEmail1">Website</label>
@@ -156,7 +181,7 @@
                     </div>
                 </div>
 
-                <div class="form-group my-3">
+                <div class="form-group my-3"hidden>
                     <label for="exampleInputEmail1">About the NGO</label>
                     <textarea rows="5" class="form-control" aria-label="With textarea"
                               placeholder="Write something about the NGO...">The NGO was established in the year 2010. Since then it has been working towards the welfare of the needy.</textarea>
@@ -168,7 +193,8 @@
                 </div>
             </div>
 
-            <div class="card-custom mt-2 help-card">
+            <!---#-->
+            <div class="card-custom mt-2 help-card"hidden>
                 <h6 class="my-3" style="">Pincodes of locations where you operate</h6>
 
                 <div class="form-group mb-3">
@@ -327,8 +353,9 @@
                     </a>
                 </div>
             </div>
+            <!---#-->
 
-            <div class="card-custom mt-2 help-card ">
+            <div class="card-custom mt-2 help-card "hidden>
                 <h6 class="my-3" style="">Change Password</h6>
                 <div class="form-group mb-3 ">
 
@@ -361,18 +388,43 @@
         <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-md-1 order-1">
             <div class="card-custom mt-2 mt-lg-0 help-card ">
                 <div class="profile-placeholder mb-3">
-                    <img src="static/assets/img/profile2.png" class="profile-pic">
+                    <img src="../static/assets/img/profile2.png" class="profile-pic">
                 </div>
                 <div style="text-align: center" class="mb-3">
-                    <a href="ngo_profile_edit.html">
+                    <a href="edit_profile(OLD).html">
                         <button class="btn btn-dark">Change Profile Picture &nbsp
                             <i style=" font-size: small" class="fa fa-pencil" aria-hidden="true"></i>
                         </button>
                     </a>
                 </div>
                 <div style="text-align: center" class=" mb-3  ">
-                    <h5 class="font-weight-bold mb-0 card-custom-title">NGO Mumbai</h5>
-                    <span class="badge badge-secondary" style="background-color:#252766">NGO</span>
+                    <h5 class="font-weight-bold mb-0 card-custom-title">Furqaan Thakur</h5>
+                    <span class="badge badge-secondary" style="background-color:#252766">Student</span>
+                </div>
+            </div>
+            <div class="card-custom mt-5 help-card ">
+                <h6 class="my-3" style="">Change Password</h6>
+                <div class="form-group mb-3 ">
+                    <input type="password" class="form-control" placeholder="Current Password" aria-label="Username"
+                           aria-describedby="basic-addon1">
+                </div>
+                <div class="form-group mb-3 ">
+                    <div class="row">
+                        <div class="col">
+
+                            <input type="password" class="form-control" placeholder="New Password"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px">
+                        </div>
+                        <div class="col">
+                            <input type="password" class="form-control" placeholder="Confirm Password"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px">
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center" class=" mb-3 ">
+                    <button class="btn btn-danger" style="width: 100%">Change Password</button>
                 </div>
             </div>
         </div>

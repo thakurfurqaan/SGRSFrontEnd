@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>
-        Student profile
+        URHope - Where Hope Prevails
     </title>
 
     <!----Custom Files----->
-    <link href="static/assets/css/custom-css/index.css" rel="stylesheet"/>
+    <link href="../static/assets/css/custom-css/index.css" rel="stylesheet"/>
 
     <!---JQuery----->
 
@@ -21,7 +21,7 @@
             crossorigin="anonymous"></script>
 
     <!---Bootstrap----->
-    <link href="static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link href="../static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -39,7 +39,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <!-- Font Awesome Icons -->
-    <link href="static/assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../static/assets/css/font-awesome.min.css" rel="stylesheet"/>
 
 </head>
 
@@ -56,10 +56,10 @@
 <!--End Navbar -->
 
 <!-- Sidebar -->
-<div class="partials_sidebar_import d-none d-lg-block"></div>
+<div class="partials_sidebar_import  d-none d-lg-block"></div>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.partials_sidebar_import').load('partials/partial_sidebar.html');
+        $('.partials_sidebar_import').load('partials/partial_volunteer_sidebar.html');
     });
 </script>
 <!--End Sidebar -->
@@ -73,10 +73,10 @@
             </div>
             <div class="col justify-content-end d-none d-lg-block">
                 <h6 class="font-weight-bold" style="color:#252766; text-align: end">
-                    <img src="static/assets/img/profile1.jpg" class="profile-pic-dashboard" height="50">
+                    <img src="../static/assets/img/profile1.jpg" class="profile-pic-dashboard" height="50">
                     &nbsp;
                     Mike Richards
-                    <span class="badge badge-secondary" style="background-color:#252766">Student</span>
+                    <span class="badge badge-secondary" style="background-color:#252766">Volunteer</span>
                 </h6>
             </div>
         </div>
@@ -107,7 +107,7 @@
                     <input type="email" class="form-control" placeholder="mikerichards@gmail.com" aria-label="Username"
                            aria-describedby="basic-addon1" disabled>
                 </div>
-                <div class="form-group my-3" hidden>
+                <div class="form-group my-3">
                     <label for="exampleInputEmail1">Address</label>
                     <textarea rows="3" class="form-control" aria-label="With textarea"
                               placeholder="564 E. Manor Station Lane Minot, ND 58701" disabled></textarea>
@@ -115,8 +115,8 @@
                 <div class="form-group mb-3  volunteer-field">
                     <div class="row">
                         <div class="col">
-                            <label for="exampleInputEmail1">Designation</label>
-                            <input type="text" class="form-control" placeholder="Student" aria-label="Username"
+                            <label for="exampleInputEmail1">Pincode</label>
+                            <input type="number" class="form-control" placeholder="58701" aria-label="Username"
                                    aria-describedby="basic-addon1" disabled>
                         </div>
                         <div class="col">
@@ -146,54 +146,23 @@
                     </div>
                 </div>
                 <div class="form-group mb-3  volunteer-field">
-                    <label for="exampleInputEmail1">University</label>
-                    <input type="text" class="form-control" placeholder="Mumbai University" aria-label="Username"
-                           aria-describedby="basic-addon1" disabled>
+                    <label for="exampleInputEmail1">Current Profile</label>
+                    <select class="custom-select" id="inputGroupSelect03" disabled>
+                        <option>--- Current Profile ---</option>
+                        <option value="1">Student</option>
+                        <option value="2" selected>Working Professional</option>
+                        <option value="3">Home Maker</option>
+                        <option value="4">Others</option>
+                    </select>
                 </div>
-                <div class="form-group my-3" hidden>
+                <div class="form-group my-3">
                     <label for="exampleInputEmail1">About Me</label>
                     <textarea disabled rows="5" class="form-control" aria-label="With textarea"
                               placeholder="Write something about you...">Mike Richards is a 27-year-old personal trainer who enjoys badminton, yoga and vandalising bus stops. He is entertaining and energetic, but can also be very dull and a bit unstable.</textarea>
                 </div>
-                <div class="form-group mb-3  volunteer-field">
-                    <label for="exampleInputEmail1">Institute</label>
-                    <input type="text" class="form-control" placeholder="M.H.Saboo Siddik College of Enginnering" aria-label="Username"
-                           aria-describedby="basic-addon1" disabled>
-                </div>
-                <div class="form-group mb-3  volunteer-field">
-                    <label for="exampleInputEmail1">Department</label>
-                    <input type="text" class="form-control" placeholder="Computer" aria-label="Username"
-                           aria-describedby="basic-addon1" disabled>
-                </div>
             </div>
 
-           
-        </div>
-
-        <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-md-1 order-1">
-            <div class="card-custom mt-2 mt-lg-0 help-card">
-                <div class="profile-placeholder mb-3"><img src="static/assets/img/profile1.jpg"
-                                                           class="profile-pic"></div>
-                <div style="text-align: center" class=" mb-3  ">
-                    <h5 class="font-weight-bold card-custom-title mb-0">Mike Richards</h5>
-                    <span class="badge badge-secondary" style="background-color:#252766">Student</span>
-                </div>
-                <div style="text-align: center" class=" mb-2 " hidden>
-                    <a href="volunteer_all_tasks.html">
-                        <button class="btn btn-outline-primary">All Tasks</button>
-                    </a>
-                </div>
-                <div style="text-align: center" class="
-                         mb-3">
-                    <a href="student_edit.html">
-                        <button class="btn btn-dark">Edit Profile &nbsp<i
-                                style=" font-size: small"
-                                class="fa fa-pencil"
-                                aria-hidden="true"></i></button>
-                    </a>
-                </div>
-            </div>
-            <div class="card-custom mt-2 help-card">
+            <div class="card-custom mt-2 help-card ">
                 <h6 class="my-3" style="">Change Password</h6>
                 <div class="form-group mb-3 ">
 
@@ -218,6 +187,31 @@
                 </div>
                 <div style="text-align: center" class=" mb-3 ">
                     <button class="btn btn-danger" style="width: 100%">Change Password</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-md-1 order-1">
+            <div class="card-custom mt-2 mt-lg-0 help-card ">
+                <div class="profile-placeholder mb-3"><img src="../static/assets/img/profile1.jpg"
+                                                           class="profile-pic"></div>
+                <div style="text-align: center" class=" mb-3  ">
+                    <h5 class="font-weight-bold card-custom-title mb-0">Mike Richards</h5>
+                    <span class="badge badge-secondary" style="background-color:#252766">Volunteer</span>
+                </div>
+                <div style="text-align: center" class=" mb-2 ">
+                    <a href="volunteer_all_tasks.html">
+                        <button class="btn btn-outline-primary">All Tasks</button>
+                    </a>
+                </div>
+                <div style="text-align: center" class="
+                         mb-3">
+                    <a href="volunteer_profile_edit.html">
+                        <button class="btn btn-dark">Edit Profile &nbsp<i
+                                style=" font-size: small"
+                                class="fa fa-pencil"
+                                aria-hidden="true"></i></button>
+                    </a>
                 </div>
             </div>
         </div>

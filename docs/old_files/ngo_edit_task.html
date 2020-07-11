@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>
-       Add Grievance
+        URHope - Where Hope Prevails
     </title>
 
     <!----Custom Files----->
-    <link href="static/assets/css/custom-css/index.css" rel="stylesheet"/>
+    <link href="../static/assets/css/custom-css/index.css" rel="stylesheet"/>
 
     <!---JQuery----->
 
@@ -21,7 +21,7 @@
             crossorigin="anonymous"></script>
 
     <!---Bootstrap----->
-    <link href="static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link href="../static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -39,14 +39,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <!-- Font Awesome Icons -->
-    <link href="static/assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../static/assets/css/font-awesome.min.css" rel="stylesheet"/>
 
 </head>
 
-<body class="landing-page overflow-hidden"
+<body class="landing-page"
       style="background-color: #f5f9fe">
 
-      <!--Navbar-->
 <div class="partials_navbar_import d-block d-lg-none"></div>
 <script type="text/javascript">
     $(document).ready(function () {
@@ -58,22 +57,21 @@
 <div class="partials_sidebar_import d-none d-lg-block"></div>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.partials_sidebar_import').load('partials/partial_sidebar.html');
+        $('.partials_sidebar_import').load('partials/partial_ngo_sidebar.html');
     });
 </script>
-<!--End Sidebar -->
-
+<!-- Sidebar -->
 
 <!---New Page Title--->
 <div class="container pl-lg-5 mt-4 mt-lg-0 mb-2">
     <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
         <div class="row align-items-center" align="center">
             <div class="col">
-                <h1 class="font-weight-bold" style="color:#252766; text-align: left">New Grievance</h1>
+                <h1 class="font-weight-bold" style="color:#252766; text-align: left">Edit Task</h1>
             </div>
             <div class="col justify-content-end d-none d-lg-block">
-                <h6 class="font-weight-bold" style="color:#252766; text-align: end" hidden>
-                    <img src="static/assets/img/profile2.png" class="profile-pic-dashboard" height="50">
+                <h6 class="font-weight-bold" style="color:#252766; text-align: end">
+                    <img src="../static/assets/img/profile2.png" class="profile-pic-dashboard" height="50">
                     &nbsp;
                     NGO Mumbai
                     <span class="badge badge-secondary" style="background-color:#252766">NGO</span>
@@ -87,21 +85,98 @@
 <!---Page Content Starts--->
 
 
-<div class="container mt-3 pl-lg-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-2"hidden>
+<div class="container mt-0 pl-lg-5">
+    <div class="row">
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
 
             <div class="card-custom mt-2 mt-lg-0 help-card">
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
-                        <h5 class="my-3 card-custom-title" style="">My Grievances</h5>
+                        <h5 class="my-3 card-custom-title" style="">Task Details</h5>
+                    </div>
+                </div>
+                <div class="form-group mb-3  volunteer-field">
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1">Task Name</label>
+                            <input type="text" class="form-control" placeholder="Task Name" aria-label="Username"
+                                   aria-describedby="basic-addon1" value="Provide clothing to the needy">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1">Task Creator Name</label>
+                            <input type="text" class="form-control" placeholder="Task Creator Name"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" value="NGO">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3 ">
+                    <label for="exampleInputEmail1">Website</label>
+                    <input type="text" class="form-control" placeholder="Website" aria-label="Username"
+                           aria-describedby="basic-addon1" value="www.urhope.in">
+                </div>
+                <div class="form-group mb-3  volunteer-field">
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1">No. of Volunteers required</label>
+                            <input type="number" class="form-control" placeholder="No. of Volunteers required"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" value="12">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1">Task type</label>
+                            <select class="custom-select" id="inputGroupSelect03">
+                                <option selected>--- Task type ---</option>
+                                <option value="1">Food</option>
+                                <option value="2">Healthcare</option>
+                                <option value="3">Shelter</option>
+                                <option value="4" selected>Clothing</option>
+                                <option value="5">Medical Equipments</option>
+                                <option value="6">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3  volunteer-field">
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1">Pincode</label>
+                            <input type="number" class="form-control" placeholder="Pincode" aria-label="Username"
+                                   aria-describedby="basic-addon1" value="123456">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1">Phone No</label>
+                            <input type="tel" class="form-control" placeholder="Phone No" aria-label="Username"
+                                   aria-describedby="basic-addon1" value="01334-235010">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group my-3">
+                    <label for="exampleInputEmail1">Task Description</label>
+                    <textarea rows="5" class="form-control" aria-label="With textarea"
+                              placeholder="Write something about the task...">We need volunteers to deliver the clothes from the main junction to the slum areas
+                    </textarea>
+                </div>
+                <div style="text-align: center" class=" mb-3 ">
+                    <a href="ngo_my_tasks.html">
+                        <button class="btn btn-success" style="width: 100%">Update Task</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-2">
+
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <h5 class="my-3 card-custom-title" style="">My Tasks</h5>
                     </div>
                     <table class="table step3-table filter-this-table">
                         <thead>
                         <tr>
-                            <th scope="col"><h6>Subject</h6></th>
-                            <th scope="col"><h6>Category</h6></th>
-                            <th scope="col"><h6>Token No.</h6></th>
+                            <th scope="col"><h6>Task</h6></th>
+                            <th scope="col"><h6>Task Type</h6></th>
+                            <th scope="col"><h6>Pincode</h6></th>
                             <th scope="col"><h6>Details</h6></th>
                         </tr>
                         </thead>
@@ -112,13 +187,11 @@
                         <tr aria-rowspan="2" class="card-row">
                             <td class="align-middle">
                                 <div class="initiative-heading">
-                                    <h6 class="font-weight-bold mb-0">Absent for Exam</h6>
-                                    <br><p>Category: University</p>
-                                    <br><p>Sub-Category: University</p>
+                                    <h6 class="font-weight-bold mb-0">Provide clothing to the needy</h6>
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0">Department</p>
+                                <p class="m-0">Clothing</p>
                             </td>
                             <td class="align-middle">
                                 <p class="m-0">123456</p>
@@ -137,7 +210,7 @@
                         <tr>
                             <td colspan="4" class="sub-td">
                                 <table class="collapse sub-table" id="collapse1">
-                                    <tr hidden>
+                                    <tr>
                                         <td colspan="1">
                                             Details of Applied Volunteers
                                         </td>
@@ -151,61 +224,63 @@
                                     </tr>
                                     <tr>
                                         <td colspan="1">
-                                            Token Number
+                                            Task ID
                                         </td>
                                         <td colspan="3">
                                             <div class="initiative-description">
-                                                <p class="text-muted" align="left">345678</p>
+                                                <p class="text-muted" align="left">1</p>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="1">
-                                            Subject
+                                            Task Details
                                         </td>
                                         <td colspan="3">
                                             <div class="initiative-description">
-                                                <p class="text-muted" align="left">Absent for exam
+                                                <p class="text-muted" align="left">We need volunteers to deliver the
+                                                    clothes from
+                                                    the
+                                                    main
+                                                    junction to the slum areas
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="1">
-                                            Category
+                                            Task Creator
                                         </td>
                                         <td colspan="3">
                                             <div class="initiative-description">
-                                                <p class="text-muted" align="left">Department
+                                                <p class="text-muted" align="left">NGO
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="1">
-                                            Sub-Category
+                                            Volunteers required
                                         </td>
                                         <td colspan="2">
                                             <div class="initiative-description">
-                                                <p class="text-muted" align="left">Examination
+                                                <p class="text-muted" align="left">12
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="1">
-                                            Description
+                                            Volunteers applied
                                         </td>
                                         <td colspan="2">
                                             <div class="initiative-description">
-                                                <p class="text-muted" align="left">Due to Malaria I was not able to attend unit test.
-                                                    I am attaching my the medical certificate.Please consider my request and 
-                                                    guide me for further steps. 
+                                                <p class="text-muted" align="left">6
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr hidden>
+                                    <tr>
                                         <td colspan="1" class="">
                                             <p class="mt-1">Contact</p>
                                         </td>
@@ -218,7 +293,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr hidden>
+                                    <tr>
                                         <td colspan="1">
                                             Website
                                         </td>
@@ -397,99 +472,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12 col-12 px-lg-3 order-lg-1 order-1">
-
-            <div class="card-custom mt-2 mt-lg-1 help-card">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col">
-                        <h5 class="my-3 card-custom-title">Enter your grievances below
-                        </h5>
-                    </div>
-                </div>
-                <div class="form-group mb-3  volunteer-field">
-                    <div class="row">
-                        <div class="col">
-                            <label for="exampleInputEmail1">Category</label>
-                            <select class="custom-select" id="inputGroupSelect02">
-                                <option selected>--- Category ---</option>
-                                <option value="1">University</option>
-                                <option value="2">Institute</option>
-                                <option value="3">Department</option>
-                                <option value="4">Other</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <label for="exampleInputEmail1">Sub-Category</label>
-                            <select class="custom-select" id="inputGroupSelect03">
-                                <option selected>--- Grievance Type ---</option>
-                                <option value="1">Infrastruture</option>
-                                <option value="2">Finance</option>
-                                <option value="3">Complaint</option>
-                                <option value="4">Admission</option>
-                                <option value="5">Scholarship</option>
-                                <option value="7">Examination</option>
-                                <option value="8">Other issue</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group mb-3 ">
-                    <label for="exampleInputEmail1">Subject</label>
-                    <input type="text" class="form-control" placeholder="Subject" aria-label="Username"
-                           aria-describedby="basic-addon1">
-                </div>
-                <div class="form-group mb-3  volunteer-field" hidden>
-                    <div class="row">
-                        <div class="col">
-                            <label for="exampleInputEmail1">No. of Volunteers required</label>
-                            <input type="number" class="form-control" placeholder="No. of Volunteers required"
-                                   aria-label="Username"
-                                   aria-describedby="basic-addon1">
-                        </div>
-                        <div class="col">
-                            <label for="exampleInputEmail1">Task type</label>
-                            <select class="custom-select" id="inputGroupSelect03">
-                                <option selected>--- Task type ---</option>
-                                <option value="1">Food</option>
-                                <option value="2">Healthcare</option>
-                                <option value="3">Shelter</option>
-                                <option value="4">Clothing</option>
-                                <option value="5">Medical Equipments</option>
-                                <option value="6">Others</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group mb-3  volunteer-field" hidden>
-                    <div class="row">
-                        <div class="col">
-                            <label for="exampleInputEmail1">Pincode</label>
-                            <input type="number" class="form-control" placeholder="Pincode" aria-label="Username"
-                                   aria-describedby="basic-addon1">
-                        </div>
-                        <div class="col">
-                            <label for="exampleInputEmail1">Phone No</label>
-                            <input type="tel" class="form-control" placeholder="Phone No" aria-label="Username"
-                                   aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group my-3">
-                    <label for="exampleInputEmail1">Grievance</label>
-                    <textarea rows="5" class="form-control" aria-label="With textarea"
-                              placeholder=" Description..."></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">Upload photo (if any)</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                </div>
-                <div style="text-align: center" class=" mb-3 ">
-                    <a href="old_files/ngo_my_tasks.html">
-                        <button class="btn btn-success" style="width: 25%">Submit</button>
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -515,5 +497,6 @@
 </body>
 
 </html>
+
 
 

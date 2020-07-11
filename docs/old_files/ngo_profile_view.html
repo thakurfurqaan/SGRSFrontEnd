@@ -10,7 +10,7 @@
     </title>
 
     <!----Custom Files----->
-    <link href="static/assets/css/custom-css/index.css" rel="stylesheet"/>
+    <link href="../static/assets/css/custom-css/index.css" rel="stylesheet"/>
 
     <!---JQuery----->
 
@@ -21,7 +21,7 @@
             crossorigin="anonymous"></script>
 
     <!---Bootstrap----->
-    <link href="static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link href="../static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -39,33 +39,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <!-- Font Awesome Icons -->
-    <link href="static/assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../static/assets/css/font-awesome.min.css" rel="stylesheet"/>
 
 </head>
 
 <body class="landing-page"
       style="background-color: #f5f9fe">
 
-<!-- Navbar -->
 <div class="partials_navbar_import d-block d-lg-none"></div>
 <script type="text/javascript">
     $(document).ready(function () {
         $('.partials_navbar_import').load('partials/partial_navbar.html');
     });
 </script>
-<!--End Navbar -->
 
 <!-- Sidebar -->
-<div class="partials_sidebar_import  d-none d-lg-block"></div>
+<div class="partials_sidebar_import d-none d-lg-block"></div>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.partials_sidebar_import').load('partials/partial_volunteer_sidebar.html');
+        $('.partials_sidebar_import').load('partials/partial_ngo_sidebar.html');
     });
 </script>
-<!--End Sidebar -->
+<!-- Sidebar -->
 
 <!---New Page Title--->
-<div class="container pl-lg-5 mt-4 mt-lg-0 mb-3">
+<div class="container pl-lg-5 mt-4 mt-lg-0 mb-2">
     <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
         <div class="row align-items-center" align="center">
             <div class="col">
@@ -73,10 +71,10 @@
             </div>
             <div class="col justify-content-end d-none d-lg-block">
                 <h6 class="font-weight-bold" style="color:#252766; text-align: end">
-                    <img src="static/assets/img/profile1.jpg" class="profile-pic-dashboard" height="50">
+                    <img src="../static/assets/img/profile2.png" class="profile-pic-dashboard" height="50">
                     &nbsp;
-                    Mike Richards
-                    <span class="badge badge-secondary" style="background-color:#252766">Volunteer</span>
+                    NGO Mumbai
+                    <span class="badge badge-secondary" style="background-color:#252766">NGO</span>
                 </h6>
             </div>
         </div>
@@ -84,7 +82,8 @@
 </div>
 <!---New Page Title Ends--->
 
-<!-- Page Content -->
+<!---Page Content Starts--->
+
 <div class="container mt-0 pl-lg-5">
     <div class="row justify-content-center">
         <div class="col-lg-6 col-12 px-lg-3 order-lg-1 order-2">
@@ -92,19 +91,19 @@
             <div class="card-custom mt-2 mt-lg-0 help-card">
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
-                        <h5 class="my-3 card-custom-title" style="">Basic Details
+                        <h5 class="my-3" style="">Basic Details
                         </h5>
                     </div>
 
                 </div>
                 <div class="form-group mb-3 ">
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" placeholder="Mike Richards" aria-label="Username"
+                    <input type="text" class="form-control" placeholder="NGO Mumbai" aria-label="Username"
                            aria-describedby="basic-addon1" disabled>
                 </div>
                 <div class="form-group mb-3 ">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" placeholder="mikerichards@gmail.com" aria-label="Username"
+                    <input type="email" class="form-control" placeholder="ngomumbai@gmail.com" aria-label="Username"
                            aria-describedby="basic-addon1" disabled>
                 </div>
                 <div class="form-group my-3">
@@ -129,37 +128,134 @@
                 <div class="form-group mb-3  volunteer-field">
                     <div class="row">
                         <div class="col">
-                            <label for="exampleInputEmail1">Age</label>
-                            <input type="number" class="form-control" placeholder="27" aria-label="Username"
+                            <label for="exampleInputEmail1">Registration No</label>
+                            <input type="number" class="form-control" placeholder="12345" aria-label="Username"
                                    aria-describedby="basic-addon1" style="border-radius: 5px" disabled>
                         </div>
                         <div class="col">
-                            <label for="exampleInputEmail1">Sex</label>
-                            <select class="custom-select" id="inputGroupSelect03" style="border-radius: 5px" disabled>
-                                <option>--- Sex ---</option>
-                                <option value="1" selected>Male</option>
-                                <option value="2">Female</option>
-                                <option value="3">Others</option>
-                                <option value="4">Prefer not to say</option>
-                            </select>
+                            <label for="exampleInputEmail1">Branch</label>
+                            <input type="text" class="form-control" placeholder="Mumbai" aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px" disabled>
                         </div>
                     </div>
                 </div>
                 <div class="form-group mb-3  volunteer-field">
-                    <label for="exampleInputEmail1">Current Profile</label>
-                    <select class="custom-select" id="inputGroupSelect03" disabled>
-                        <option>--- Current Profile ---</option>
-                        <option value="1">Student</option>
-                        <option value="2" selected>Working Professional</option>
-                        <option value="3">Home Maker</option>
-                        <option value="4">Others</option>
-                    </select>
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1">Website</label>
+                            <input type="text" class="form-control" placeholder="www.ngo.com" aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px" disabled>
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1">Social Media Handle</label>
+                            <input type="text" class="form-control" placeholder="@ngomumbai" aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px" disabled>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="form-group my-3">
-                    <label for="exampleInputEmail1">About Me</label>
+                    <label for="exampleInputEmail1">About the NGO</label>
                     <textarea disabled rows="5" class="form-control" aria-label="With textarea"
-                              placeholder="Write something about you...">Mike Richards is a 27-year-old personal trainer who enjoys badminton, yoga and vandalising bus stops. He is entertaining and energetic, but can also be very dull and a bit unstable.</textarea>
+                              placeholder="Write something about you...">The NGO was established in the year 2010. Since then it has been working towards the welfare of the needy.</textarea>
                 </div>
+            </div>
+
+            <div class="card-custom mt-2 help-card">
+                <h6 class="my-3" style="">Pincodes of locations where you operate</h6>
+
+                <table class="pincodes-table">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="">
+                                <button type="reset" style="border: none"
+                                        class="delete-pincode-row btn btn-danger btn-sm pincode-reset-btn"
+                                        value="Reset" disabled><i
+                                        class="fa fa-times-circle" style="color: red"></i></button>
+                            </div>
+                        </td>
+                        <td>123456</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="">
+                                <button type="reset" style="border: none"
+                                        class="delete-pincode-row btn btn-danger btn-sm pincode-reset-btn"
+                                        value="Reset" disabled><i
+                                        class="fa fa-times-circle" style="color: red"></i></button>
+                            </div>
+                        </td>
+                        <td>123456</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <h6 class="my-3" style="">Services that you provide</h6>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="food" checked disabled>
+                    <label class="custom-control-label" for="food">
+                        Food
+                    </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="medicines" checked disabled>
+                    <label class="custom-control-label" for="medicines">
+                        Medicines
+                    </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="shelter" disabled>
+                    <label class="custom-control-label" for="shelter">
+                        Shelter
+                    </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="clothing" disabled>
+                    <label class="custom-control-label" for="clothing">
+                        Clothing
+                    </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="medical" disabled>
+                    <label class="custom-control-label" for="medical">
+                        Medical Equipment
+                    </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="others" disabled>
+                    <label class="custom-control-label" for="others">
+                        Others
+                    </label>
+                </div>
+
+                <h6 class="my-3" style="">Other Branch Details</h6>
+                <table class="table table-responsive branch-details-table step3-table">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone No.</th>
+                        <th>Email</th>
+                        <th>Remove</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Mumbai</td>
+                        <td>1234567890</td>
+                        <td>peterparker@mail.com</td>
+                        <td>
+                            <div class="">
+                                <button type="reset" style="border: none"
+                                        class="delete-branch-row btn btn-danger btn-sm pincode-reset-btn"
+                                        value="Reset" disabled><i
+                                        class="fa fa-times-circle" style="color: red"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div class="card-custom mt-2 help-card ">
@@ -191,22 +287,23 @@
             </div>
         </div>
 
+
         <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-md-1 order-1">
             <div class="card-custom mt-2 mt-lg-0 help-card ">
-                <div class="profile-placeholder mb-3"><img src="static/assets/img/profile1.jpg"
+                <div class="profile-placeholder mb-3"><img src="../static/assets/img/profile2.png"
                                                            class="profile-pic"></div>
                 <div style="text-align: center" class=" mb-3  ">
-                    <h5 class="font-weight-bold card-custom-title mb-0">Mike Richards</h5>
-                    <span class="badge badge-secondary" style="background-color:#252766">Volunteer</span>
+                    <h5 class="font-weight-bold mb-0 card-custom-title">NGO Mumbai</h5>
+                    <span class="badge badge-secondary" style="background-color:#252766">NGO</span>
                 </div>
                 <div style="text-align: center" class=" mb-2 ">
-                    <a href="volunteer_all_tasks.html">
-                        <button class="btn btn-outline-primary">All Tasks</button>
+                    <a href="ngo_my_tasks.html.html">
+                        <button class="btn btn-outline-primary">My Tasks</button>
                     </a>
                 </div>
                 <div style="text-align: center" class="
                          mb-3">
-                    <a href="volunteer_profile_edit.html">
+                    <a href="ngo_profile_edit.html">
                         <button class="btn btn-dark">Edit Profile &nbsp<i
                                 style=" font-size: small"
                                 class="fa fa-pencil"
@@ -215,15 +312,19 @@
                 </div>
             </div>
         </div>
+
+
     </div>
 </div>
-</div>
-<!-- Page Content Ends-->
 
+
+<!---Page Content Ends--->
 
 <br/><br/>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
     $('table button i').click(function () {
         if ($(this).hasClass('fa-angle-down')) {
             $(this).removeClass('fa-angle-down');
@@ -233,9 +334,15 @@
             $(this).addClass('fa-angle-down');
         }
     });
-
 </script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+

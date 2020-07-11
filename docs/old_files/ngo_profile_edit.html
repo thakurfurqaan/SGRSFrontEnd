@@ -10,7 +10,7 @@
     </title>
 
     <!----Custom Files----->
-    <link href="static/assets/css/custom-css/index.css" rel="stylesheet"/>
+    <link href="../static/assets/css/custom-css/index.css" rel="stylesheet"/>
 
     <!---JQuery----->
 
@@ -21,7 +21,7 @@
             crossorigin="anonymous"></script>
 
     <!---Bootstrap----->
-    <link href="static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link href="../static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -39,7 +39,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <!-- Font Awesome Icons -->
-    <link href="static/assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../static/assets/css/font-awesome.min.css" rel="stylesheet"/>
 
 </head>
 
@@ -67,11 +67,11 @@
     <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
         <div class="row align-items-center" align="center">
             <div class="col">
-                <h1 class="font-weight-bold" style="color:#252766; text-align: left">My Profile</h1>
+                <h1 class="font-weight-bold" style="color:#252766; text-align: left">Your Dashboard</h1>
             </div>
             <div class="col justify-content-end d-none d-lg-block">
                 <h6 class="font-weight-bold" style="color:#252766; text-align: end">
-                    <img src="static/assets/img/profile2.png" class="profile-pic-dashboard" height="50">
+                    <img src="../static/assets/img/profile2.png" class="profile-pic-dashboard" height="50">
                     &nbsp;
                     NGO Mumbai
                     <span class="badge badge-secondary" style="background-color:#252766">NGO</span>
@@ -91,37 +91,37 @@
             <div class="card-custom mt-2 mt-lg-0 help-card">
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
-                        <h5 class="my-3" style="">Basic Details
+                        <h5 class="my-3 card-custom-title" style="">Basic Details
                         </h5>
                     </div>
 
                 </div>
                 <div class="form-group mb-3 ">
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" placeholder="NGO Mumbai" aria-label="Username"
-                           aria-describedby="basic-addon1" disabled>
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Username"
+                           aria-describedby="basic-addon1" value="NGO Mumbai">
                 </div>
                 <div class="form-group mb-3 ">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" placeholder="ngomumbai@gmail.com" aria-label="Username"
-                           aria-describedby="basic-addon1" disabled>
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Username"
+                           aria-describedby="basic-addon1" value="ngomumbai@gmail.com">
                 </div>
                 <div class="form-group my-3">
                     <label for="exampleInputEmail1">Address</label>
                     <textarea rows="3" class="form-control" aria-label="With textarea"
-                              placeholder="564 E. Manor Station Lane Minot, ND 58701" disabled></textarea>
+                              placeholder="Address"> 564 E. Manor Station Lane Minot, ND 58701</textarea>
                 </div>
                 <div class="form-group mb-3  volunteer-field">
                     <div class="row">
                         <div class="col">
                             <label for="exampleInputEmail1">Pincode</label>
-                            <input type="number" class="form-control" placeholder="58701" aria-label="Username"
-                                   aria-describedby="basic-addon1" disabled>
+                            <input type="number" class="form-control" placeholder="Pincode" aria-label="Username"
+                                   aria-describedby="basic-addon1" value="58701">
                         </div>
                         <div class="col">
                             <label for="exampleInputEmail1">Phone No</label>
-                            <input type="tel" class="form-control" placeholder="1234567890" aria-label="Username"
-                                   aria-describedby="basic-addon1" disabled>
+                            <input type="tel" class="form-control" placeholder="Phone No" aria-label="Username"
+                                   aria-describedby="basic-addon1" value="1234567890">
                         </div>
                     </div>
                 </div>
@@ -129,13 +129,14 @@
                     <div class="row">
                         <div class="col">
                             <label for="exampleInputEmail1">Registration No</label>
-                            <input type="number" class="form-control" placeholder="12345" aria-label="Username"
-                                   aria-describedby="basic-addon1" style="border-radius: 5px" disabled>
+                            <input type="number" class="form-control" placeholder="Registration No"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px" value="12345">
                         </div>
                         <div class="col">
                             <label for="exampleInputEmail1">Branch</label>
-                            <input type="text" class="form-control" placeholder="Mumbai" aria-label="Username"
-                                   aria-describedby="basic-addon1" style="border-radius: 5px" disabled>
+                            <input type="text" class="form-control" placeholder="Branch" aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px" value="Mumbai">
                         </div>
                     </div>
                 </div>
@@ -143,26 +144,48 @@
                     <div class="row">
                         <div class="col">
                             <label for="exampleInputEmail1">Website</label>
-                            <input type="text" class="form-control" placeholder="www.ngo.com" aria-label="Username"
-                                   aria-describedby="basic-addon1" style="border-radius: 5px" disabled>
+                            <input type="text" class="form-control" placeholder="Website" aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px" value="www.ngo.com">
                         </div>
                         <div class="col">
                             <label for="exampleInputEmail1">Social Media Handle</label>
-                            <input type="text" class="form-control" placeholder="@ngomumbai" aria-label="Username"
-                                   aria-describedby="basic-addon1" style="border-radius: 5px" disabled>
+                            <input type="text" class="form-control" placeholder="Social Media Handle"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px" value="@ngomumbai">
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group my-3">
                     <label for="exampleInputEmail1">About the NGO</label>
-                    <textarea disabled rows="5" class="form-control" aria-label="With textarea"
-                              placeholder="Write something about you...">The NGO was established in the year 2010. Since then it has been working towards the welfare of the needy.</textarea>
+                    <textarea rows="5" class="form-control" aria-label="With textarea"
+                              placeholder="Write something about the NGO...">The NGO was established in the year 2010. Since then it has been working towards the welfare of the needy.</textarea>
+                </div>
+                <div style="text-align: center" class=" mb-3 ">
+                    <a href="volunteer_profile_view.html">
+                        <button class="btn btn-success" style="width: 100%">Save Changes</button>
+                    </a>
                 </div>
             </div>
 
             <div class="card-custom mt-2 help-card">
                 <h6 class="my-3" style="">Pincodes of locations where you operate</h6>
+
+                <div class="form-group mb-3">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <input id="add-pincode" type="number" class="form-control " placeholder="Pincode"
+                                   aria-label="Username"
+                                   aria-describedby="basic-addon1">
+                        </div>
+                        <div class="col">
+                            <button type="button" value="Add Row" class="add-pincode-row btn btn-success btn-sm"
+                                    style="">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
                 <table class="pincodes-table">
                     <tbody>
@@ -171,7 +194,7 @@
                             <div class="">
                                 <button type="reset" style="border: none"
                                         class="delete-pincode-row btn btn-danger btn-sm pincode-reset-btn"
-                                        value="Reset" disabled><i
+                                        value="Reset"><i
                                         class="fa fa-times-circle" style="color: red"></i></button>
                             </div>
                         </td>
@@ -182,7 +205,7 @@
                             <div class="">
                                 <button type="reset" style="border: none"
                                         class="delete-pincode-row btn btn-danger btn-sm pincode-reset-btn"
-                                        value="Reset" disabled><i
+                                        value="Reset"><i
                                         class="fa fa-times-circle" style="color: red"></i></button>
                             </div>
                         </td>
@@ -191,46 +214,88 @@
                     </tbody>
                 </table>
 
-                <h6 class="my-3" style="">Services that you provide</h6>
+                <h6 class="my-3" style="">Select Services that you provide</h6>
 
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="food" checked disabled>
+                    <input type="checkbox" class="custom-control-input" id="food" checked>
                     <label class="custom-control-label" for="food">
                         Food
                     </label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="medicines" checked disabled>
+                    <input type="checkbox" class="custom-control-input" id="medicines" checked>
                     <label class="custom-control-label" for="medicines">
                         Medicines
                     </label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="shelter" disabled>
+                    <input type="checkbox" class="custom-control-input" id="shelter">
                     <label class="custom-control-label" for="shelter">
                         Shelter
                     </label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="clothing" disabled>
+                    <input type="checkbox" class="custom-control-input" id="clothing">
                     <label class="custom-control-label" for="clothing">
                         Clothing
                     </label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="medical" disabled>
+                    <input type="checkbox" class="custom-control-input" id="medical">
                     <label class="custom-control-label" for="medical">
                         Medical Equipment
                     </label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="others" disabled>
+                    <input type="checkbox" class="custom-control-input" id="others">
                     <label class="custom-control-label" for="others">
                         Others
                     </label>
                 </div>
-
+                <div class="form-group mb-3 " hidden>
+                    <select class="custom-select" id="inputGroupSelect03">
+                        <option selected>--- Select Services ---</option>
+                        <option value="1">Food</option>
+                        <option value="2">Healthcare</option>
+                        <option value="2">Shelter</option>
+                        <option value="2">Services</option>
+                        <option value="2">Clothing</option>
+                        <option value="2">Medical Equipments</option>
+                        <option value="2">Others</option>
+                    </select>
+                </div>
+                <hr>
                 <h6 class="my-3" style="">Other Branch Details</h6>
+                <form>
+                    <div class="form-group mb-3 ">
+                        <input id="branch-name" type="text" class="form-control" placeholder="Branch Name"
+                               aria-label="Username"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="row">
+                            <div class="col">
+                                <input id="branch-phone" type="tel" class="form-control"
+                                       placeholder="Branch Phone No."
+                                       aria-label="Username"
+                                       aria-describedby="basic-addon1">
+                            </div>
+                            <div class="col">
+                                <input id="branch-email" type="email" class="form-control"
+                                       placeholder="Branch Email ID"
+                                       aria-label="Username"
+                                       aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" mb-3 ">
+                        <button type="button" value="Add Row" class="add-branch-row btn btn-success btn-sm"
+                                style="">Add
+                            Branch
+                        </button>
+                    </div>
+                </form>
                 <table class="table table-responsive branch-details-table step3-table">
                     <thead>
                     <tr>
@@ -249,13 +314,18 @@
                             <div class="">
                                 <button type="reset" style="border: none"
                                         class="delete-branch-row btn btn-danger btn-sm pincode-reset-btn"
-                                        value="Reset" disabled><i
+                                        value="Reset"><i
                                         class="fa fa-times-circle" style="color: red"></i></button>
                             </div>
                         </td>
                     </tr>
                     </tbody>
                 </table>
+                <div style="text-align: center" class=" mb-3 ">
+                    <a href="volunteer_profile_view.html">
+                        <button class="btn btn-success" style="width: 100%">Save Service Details</button>
+                    </a>
+                </div>
             </div>
 
             <div class="card-custom mt-2 help-card ">
@@ -290,25 +360,19 @@
 
         <div class="col-lg-6 col-12 px-lg-3 order-lg-2 order-md-1 order-1">
             <div class="card-custom mt-2 mt-lg-0 help-card ">
-                <div class="profile-placeholder mb-3"><img src="static/assets/img/profile2.png"
-                                                           class="profile-pic"></div>
+                <div class="profile-placeholder mb-3">
+                    <img src="../static/assets/img/profile2.png" class="profile-pic">
+                </div>
+                <div style="text-align: center" class="mb-3">
+                    <a href="ngo_profile_edit.html">
+                        <button class="btn btn-dark">Change Profile Picture &nbsp
+                            <i style=" font-size: small" class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                    </a>
+                </div>
                 <div style="text-align: center" class=" mb-3  ">
                     <h5 class="font-weight-bold mb-0 card-custom-title">NGO Mumbai</h5>
                     <span class="badge badge-secondary" style="background-color:#252766">NGO</span>
-                </div>
-                <div style="text-align: center" class=" mb-2 ">
-                    <a href="ngo_my_tasks.html.html">
-                        <button class="btn btn-outline-primary">My Tasks</button>
-                    </a>
-                </div>
-                <div style="text-align: center" class="
-                         mb-3">
-                    <a href="ngo_profile_edit.html">
-                        <button class="btn btn-dark">Edit Profile &nbsp<i
-                                style=" font-size: small"
-                                class="fa fa-pencil"
-                                aria-hidden="true"></i></button>
-                    </a>
                 </div>
             </div>
         </div>
@@ -339,10 +403,6 @@
 </body>
 
 </html>
-
-
-
-
 
 
 
