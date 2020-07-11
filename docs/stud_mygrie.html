@@ -46,6 +46,7 @@
 <body class="landing-page"
       style="background-color: #f5f9fe">
 
+      <!--Navbar-->
 <div class="partials_navbar_import d-block d-lg-none"></div>
 <script type="text/javascript">
     $(document).ready(function () {
@@ -57,10 +58,11 @@
 <div class="partials_sidebar_import d-none d-lg-block"></div>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.partials_sidebar_import').load('partials/partial_ngo_sidebar.html');
+        $('.partials_sidebar_import').load('partials/partial_sidebar.html');
     });
 </script>
-<!-- Sidebar -->
+<!--End Sidebar -->
+
 
 <!---New Page Title--->
 <div class="container pl-lg-5 mt-4 mt-lg-0 mb-2">
@@ -84,6 +86,89 @@
 
 <!---Page Content Starts--->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header pb-0" style="border-bottom: none">
+            <h5 class="modal-title mt-2 mb-1 font-weight-bold" style="">All Messages</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="modal-body px-4 py-2">
+            <div class="initiative-heading px-2"hidden>
+                <h4 class="font-weight-bold link-modal-title">Text1</h4>
+
+            </div>
+            <div class="initiative-description px-2" hidden>
+                <p class="text-muted mb-0 link-modal-description">Text2</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-12 px-lg-0 order-lg-1">
+
+                    <div style="height:300px; overflow-y:scroll">
+                        <table class="table filter-this-table">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: middle" colspan="1">
+                                        <table class="table filter-this-table">
+                                            <tr>
+                                                <td style="padding: 4px;">
+                                                    <h6 class="my-2">Institute Head</h6>
+                                                </td>
+                                                <td style="padding: 4px; text-align: right;">
+                                                    <h6 class="my-2">8 May 2020 12:36</h6>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p>
+                                            We are looking into your matter.
+                                            Due to technical issues it may take longer time.
+                                        </p>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td style="vertical-align: middle" colspan="1">
+                                        <table class="table filter-this-table">
+                                            <tr>
+                                                <td style="padding: 4px;">
+                                                    <h6 class="my-2"> You </h6>
+                                                </td>
+                                                <td style="padding: 4px; text-align: right;">
+                                                    <h6 class="my-2">9 May 2020 12:36</h6>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p>
+                                            No problem,Hopefully it will resolve soon.
+                                        </p>
+                                    </td>
+                                </tr>
+
+                                <!--========== ROW 1 ENDS =========-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer align-middle justify-content-center pt-0" style="border-top: none">
+            <button type="button" class="btn btn-success"><i class="fa fa-reply" aria-hidden="true"></i> Reply
+            </button>
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+<!--End  Modal -->
+
 
 <div class="container mt-3 pl-lg-5">
     <div class="row justify-content-around">
@@ -94,6 +179,7 @@
                     <div class=" col-md-4 ">
                         <h5 class="my-3 card-custom-title" style="">All Grievances</h5>
                     </div>
+                    <!--Filters-->
                     <div class=" col-md-3 col-sm-6 col-6 btn-group p-1">
                             <button type="button" class="btn btn-sm btn-light"
                                     data-toggle="dropdown"
@@ -101,7 +187,7 @@
                                     aria-expanded="false" style="text-transform: capitalize">
                                 <select
                                         class="custom-select-sm custom-select filter">
-                                    <option selected>Choose...</option>
+                                    <option selected>Choose Sub-category</option>
                                     <option value="University">University</option>
                                     <option value="Institute">Institute</option>
                                     <option value="Department">Department</option>
@@ -115,16 +201,21 @@
                                     aria-expanded="false" style="text-transform: capitalize">
                                 <select
                                         class="custom-select-sm custom-select filter">
-                                    <option selected>Choose...</option>
-                                    <option value="University">University</option>
-                                    <option value="Institute">Institute</option>
-                                    <option value="Department">Department</option>
+                                    <option selected>Choose Status</option>
+                                    <option value="University">Resolved</option>
+                                    <option value="Institute">Pending</option>
+                                    <option value="Department">In-Draft</option>
+                                    <option value="Department">In-Review</option>
+                                    <option value="Department">Discarded</option>
                                 </select>
                             </button>
                         </div>
-                        <div class=" col-md-2 col-sm-12 col-xs-12">
-                            <input class="w-100 mb-1" style="height: 32px;" type="search" placeholder="Search">
+                        <!--Search-->
+                        <div class=" col-md-2 col-sm-12 col-xs-12 mb-1">
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Username"
+                                   aria-describedby="basic-addon1" style="border-radius: 5px">
                         </div>
+
                         <div style="text-align: center" class=" col-2 mb-1 p-0"hidden>
                           <a href="#">
                              <button class="btn btn-dark">Edit Draft &nbsp<i
@@ -156,15 +247,15 @@
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none">College broken</p>
-                                <h5 class="d-none d-md-block font-weight-bold mb-0 text-primary">College broken</h5>
+                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">College broken</p>
+                                <h5 class="d-none d-md-block" style="color:#252766">College broken</h5>
                                 <p class="m-0 d-none d-md-block"><b>Category :</b> Institute</p>
                                 <p class="m-0 d-none d-md-block"><b>Sub-Category :</b> Infrastruture</p>
                                 <p class="m-0"><b>Status :</b><b class="text-warning"> Pending</b></p>
                             </td>
                             <td class="align-middle">
                                 <p class="mb-4 d-none d-md-block"><b>Date :</b> 4 July 2020</p><br>
-                                <p class="m-0 d-none d-md-block"><b>(3 days ago)</b></p>
+                                <p class="m-0 d-none d-md-block"><b>3 days ago</b></p>
                             </td>
                             <td class="align-middle">
                                 <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
@@ -275,9 +366,13 @@
                                         </td>
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
-                                                <a href="#">
-                                                    <button class="btn btn-primary mt-1">View Messages</button>
-                                                </a>
+                                            <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
+                                                data-target="#exampleModalCenter" onclick="
+                                                updateModal({
+                                                'title': 'Token Id : 12345',
+                                                'description': 'Description',
+                                                });">View
+                                            </button>
                                                 <a href="#">
                                                     <button class="btn btn-success mt-1 ml-2">Approve</button>
                                                 </a>
@@ -309,15 +404,15 @@
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none">Postpone exam</p>
-                                <h5 class="d-none d-md-block font-weight-bold mb-0 text-primary">Postpone exam</h5>
+                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">Postpone exam</p>
+                                <h5 class="d-none d-md-block" style="color:#252766">Postpone exam</h5>
                                 <p class="m-0 d-none d-md-block"><b>Category :</b> Department</p>
                                 <p class="m-0 d-none d-md-block"><b>Sub-Category :</b> Examination</p>
                                 <p class="m-0"><b>Status :</b><b class="text-success"> Resolved</b></p>
                             </td>
                             <td class="align-middle">
                                 <p class="mb-4 d-none d-md-block"><b>Date :</b> 7 June 2020</p><br>
-                                <p class="m-0 d-none d-md-block"><b>(1 month ago)</b></p>
+                                <p class="m-0 d-none d-md-block"><b>1 month ago</b></p>
                             </td>
                             <td class="align-middle">
                                 <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
@@ -452,9 +547,13 @@
                                         </td>
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
-                                                <a href="#">
-                                                    <button class="btn btn-primary mt-1">View Messages</button>
-                                                </a>
+                                            <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
+                                                data-target="#exampleModalCenter" onclick="
+                                                updateModal({
+                                                'title': 'Token Id : 12345',
+                                                'description': 'Description',
+                                                });">View
+                                            </button>
                                                 <a href="#">
                                                     <button class="btn btn-success mt-1 ml-2">Approve</button>
                                                 </a>
@@ -484,15 +583,15 @@
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none">Absent for exam</p>
-                                <h5 class="d-none d-md-block font-weight-bold mb-0 text-primary">Absent for exam</h5>
+                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">Absent for exam</p>
+                                <h5 class="d-none d-md-block" style="color:#252766">Absent for exam</h5>
                                 <p class="m-0 d-none d-md-block"><b>Category :</b> Department</p>
                                 <p class="m-0 d-none d-md-block"><b>Sub-Category :</b> Examination</p>
                                 <p class="m-0"><b>Status :</b><b class="text-success"> Resolved</b></p>
                             </td>
                             <td class="align-middle">
                                 <p class="mb-4 d-none d-md-block"><b>Date :</b> 23 March 2020</p><br>
-                                <p class="m-0 d-none d-md-block"><b>(4 months ago)</b></p>
+                                <p class="m-0 d-none d-md-block"><b>4 months ago</b></p>
                             </td>
                             <td class="align-middle">
                                 <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
@@ -628,9 +727,13 @@
                                         </td>
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
-                                                <a href="#">
-                                                    <button class="btn btn-primary mt-1">View Messages</button>
-                                                </a>
+                                            <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
+                                                data-target="#exampleModalCenter" onclick="
+                                                updateModal({
+                                                'title': 'Token Id : 12345',
+                                                'description': 'Description',
+                                                });">View
+                                            </button>
                                                 <a href="#">
                                                     <button class="btn btn-success mt-1 ml-2">Approve</button>
                                                 </a>
@@ -662,8 +765,8 @@
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none">College broken</p>
-                                <h5 class="d-none d-md-block font-weight-bold mb-0 text-primary">College broken</h5>
+                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">College broken</p>
+                                <h5 class="d-none d-md-block" style="color:#252766">College broken</h5>
                                 <p class="m-0 d-none d-md-block"><b>Category :</b> Institute</p>
                                 <p class="m-0 d-none d-md-block"><b>Sub-Category :</b></p>
                                 <p class="m-0"><b>Status :</b><b class="text-muted"> In-Draft</b></p>
@@ -838,15 +941,15 @@
                                 </div>
                             </td>
                             <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none">Postpone exam</p>
-                                <h5 class="d-none d-md-block font-weight-bold mb-0 text-primary">Postpone exam</h5>
+                                <p class="m-0 d-xs-block d-md-none font-weight-bold" style="color:#252766">Postpone exam</p>
+                                <h5 class="d-none d-md-block" style="color:#252766">Postpone exam</h5>
                                 <p class="m-0 d-none d-md-block"><b>Category :</b> Department</p>
                                 <p class="m-0 d-none d-md-block"><b>Sub-Category :</b> Examination</p>
                                 <p class="m-0"><b>Status :</b><b class="text-success"> Resolved</b></p>
                             </td>
                             <td class="align-middle">
                                 <p class="mb-4 d-none d-md-block"><b>Date :</b> 7 June 2020</p><br>
-                                <p class="m-0 d-none d-md-block"><b>(1 month ago)</b></p>
+                                <p class="m-0 d-none d-md-block"><b>1 month ago</b></p>
                             </td>
                             <td class="align-middle">
                                 <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
@@ -981,9 +1084,13 @@
                                         </td>
                                         <td colspan="3">
                                             <div style="" class=" mb-2 ">
-                                                <a href="#">
-                                                    <button class="btn btn-primary mt-1">View Messages</button>
-                                                </a>
+                                            <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
+                                                data-target="#exampleModalCenter" onclick="
+                                                updateModal({
+                                                'title': 'Token Id : 12345',
+                                                'description': 'Description',
+                                                });">View
+                                            </button>
                                                 <a href="#">
                                                     <button class="btn btn-success mt-1 ml-2">Approve</button>
                                                 </a>
@@ -1131,6 +1238,21 @@
             $(this).addClass('fa-angle-down');
         }
     });
+
+    //Modal function//
+    function updateModal(d) {
+            $('.link-modal-title').html(d['title']);
+            $('.link-modal-description').html(d['description']);
+            $('.link-modal-eligibility').html(d['eligibility']);
+            $('.link-modal-documents').html(d['documents']);
+            $('.link-modal-duration').html(d['duration']);
+            var contact = '';
+            console.log(d['phone']);
+            for (var i = 0; i < d['phone'].length; i++)
+                contact += "<a href='tel:" + d['phone'][i] + "'> <button class='btn btn-sm btn-outline-primary my-1'>" + d['phone'][i] + "</button> </a>";
+            $('.link-modal-contact').html(contact);
+            $('.link-modal-sources').html("<a href='" + d['source'] + "'>View Source</a>");
+        }
 </script>
 
 </body>
