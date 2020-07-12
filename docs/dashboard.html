@@ -8,6 +8,7 @@
     <title>
         Dashboard
     </title>
+    <link rel="icon" sizes="76x76" href="static/assets/img/Logos/govt-logo-trans.png">
 
     <!----Custom Files----->
     <link href="static/assets/css/custom-css/index.css" rel="stylesheet"/>
@@ -71,23 +72,6 @@
             <div class="col">
                 <h1 class="font-weight-bold" style="color:#252766; text-align: left">Your Dashboard</h1>
             </div>
-            <!--            <div class="col justify-content-end d-none d-lg-block" hidden>-->
-            <!--                <select onchange="doGTranslate(this);">-->
-            <!--                    <option class="lang notranslate" value="en|en">English</option>-->
-            <!--                    <option class="lang notranslate" value="en|ar">Arabic</option>-->
-            <!--                    <option class="lang notranslate" value="en|hi">Hindi</option>-->
-            <!--                    <option class="lang notranslate" value="en|fa">Persian</option>-->
-            <!--                    <option class="lang notranslate" value="en|ur">Urdu</option>-->
-            <!--                    <option class="lang notranslate" value="en|bn">Bengali</option>-->
-            <!--                    <option class="lang notranslate" value="en|gu">Gujarati</option>-->
-            <!--                    <option class="lang notranslate" value="en|kn">Kannada</option>-->
-            <!--                    <option class="lang notranslate" value="en|mr">Marathi</option>-->
-            <!--                    <option class="lang notranslate" value="en|ne">Nepali</option>-->
-            <!--                    <option class="lang notranslate" value="en|pa">Punjabi</option>-->
-            <!--                    <option class="lang notranslate" value="en|ta">Tamil</option>-->
-            <!--                    <option class="lang notranslate" value="en|te">Telugu</option>-->
-            <!--                </select>-->
-            <!--            </div>-->
             <div class="col justify-content-end d-none d-lg-block">
                 <h6 class="font-weight-bold" style="color:#252766; text-align: end">
                     <img src="static/assets/img/student_dp.jpg" class="profile-pic-dashboard" height="50">
@@ -261,16 +245,6 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="options" onclick="location.href='view_profile.html';" style="cursor: pointer">
-                <div>
-                    <img src="static/assets/img/account.jpg" class="options-img"/>
-                </div>
-                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-user" aria-hidden="true"></i><br>
-                    My Profile
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
             <div class="options" onclick="location.href='grievances_list.html';" style="cursor: pointer">
                 <div>
                     <img src="static/assets/img/feedback.jpg" class="options-img"/>
@@ -278,6 +252,16 @@
                 <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-comments"
                                                   aria-hidden="true"></i><br>
                     My Grievances
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="options" onclick="location.href='view_profile.html';" style="cursor: pointer">
+                <div>
+                    <img src="static/assets/img/account.jpg" class="options-img"/>
+                </div>
+                <div class="options-title p-2"><i style="font-size: xx-large" class="fa fa-user" aria-hidden="true"></i><br>
+                    My Profile
                 </div>
             </div>
         </div>
@@ -354,172 +338,173 @@
                         </tr>
                         </thead>
                         <tbody>
-
                         <!--========== ROW 1 STARTS =========-->
 
-                        <tr aria-rowspan="2" class="card-row">
-                            <td class="align-middle">
-                                <div class="initiative-heading">
-                                    <h6 class=" mb-0" style="text-align: center">Token Number</h6>
-                                    <h6 class="d-xs-block d-md-none mb-0 font-weight-bold"
-                                        style="color:#252766; text-align: center; font-size: small !important;">
+                        <tr aria-rowspan='2' class='card-row'>
+                            <td class='align-middle'>
+                                <div class='initiative-heading'>
+                                    <h6 class=' mb-0' style='text-align: center'>Token Number</h6>
+                                    <h6 class='d-xs-block d-md-none mb-0 font-weight-bold'
+                                        style='color:#252766; text-align: center; font-size: small !important;'>
                                         123456</h6>
-                                    <h3 class="d-none d-md-block mb-0" style="text-align: center; color:#252766;">
+                                    <h3 class='d-none d-md-block mb-0' style='text-align: center; color:#252766;'>
                                         123456</h3>
                                 </div>
                             </td>
-                            <td class="align-middle">
-                                <p class="m-0 d-xs-block d-md-none font-weight-bold text-uppercase"
-                                   style="color:#252766; font-size: small !important;">College
+                            <td class='align-middle'>
+                                <p class='m-0 d-xs-block d-md-none font-weight-bold text-uppercase'
+                                   style='color:#252766; font-size: small !important;'>College
                                     broken</p>
-                                <h5 class="d-none d-md-block mb-0 text-uppercase font-weight-bold" style="color:#252766">College
+                                <h5 class='d-none d-md-block mb-0 text-uppercase font-weight-bold'
+                                    style='color:#252766'>College
                                     broken</h5>
-                                <p class="m-0 d-none d-md-block"><b>Category:</b> Institute</p>
-                                <p class="m-0 d-none d-md-block"><b>Sub-Category:</b> Infrastruture</p>
-                                <p class="m-0"><b>Status:</b><b class="text-warning"> Pending</b></p>
+                                <p class='m-0 d-none d-md-block'><b>Category:</b> Institute</p>
+                                <p class='m-0 d-none d-md-block'><b>Sub-Category:</b> Infrastruture</p>
+                                <p class='m-0 d-block d-md-none'><b>Status:</b><b class='text-warning'> Pending</b></p>
                             </td>
-                            <td class="align-middle">
-                                <p class="mb-0 d-none d-md-block"><b>Posted on:</b> 4 July 2020</p>
-                                <p class="mb-0 d-none d-md-block">3 days ago</p>
+                            <td class='align-middle'>
+                                <p class='m-0 d-none d-md-block'><b>Status:</b><b class='text-warning'> Pending</b></p>
+                                <p class='mb-0 d-none d-md-block'><b>Posted on:</b> 4 July 2020</p>
+                                <p class='mb-0 d-none d-md-block'>3 days ago</p>
                             </td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="collapse"
-                                        data-target="#collapse1"
-                                        aria-expanded="false" aria-controls="collapseExample">
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <td class='align-middle'>
+                                <button type='button' class='btn btn-sm btn-outline-dark' data-toggle='collapse'
+                                        data-target='#collapse1'
+                                        aria-expanded='false' aria-controls='collapseExample'>
+                                    <i class='fa fa-angle-down' aria-hidden='true'></i>
                                 </button>
                             </td>
-                            <td class="align-middle" hidden>
+                            <td class='align-middle' hidden>
 
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="4" class="sub-td">
-                                <table class="collapse sub-table" id="collapse1">
+                            <td colspan='4' class='sub-td'>
+                                <table class='collapse sub-table' id='collapse1'>
                                     <tr hidden>
-                                        <td colspan="1">
+                                        <td colspan='1'>
                                             Details of Applied Volunteers
                                         </td>
-                                        <td colspan="3">
-                                            <a href="">
-                                                <button class="btn btn-sm btn-outline-primary mt-1">
+                                        <td colspan='3'>
+                                            <a href=''>
+                                                <button class='btn btn-sm btn-outline-primary mt-1'>
                                                     Download
                                                 </button>
                                             </a>
                                         </td>
                                     </tr>
-                                    <tr class="d-md-none">
-                                        <td colspan="1">
+                                    <tr class='d-md-none'>
+                                        <td colspan='1'>
                                             Token Number
                                         </td>
-                                        <td colspan="3">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">123456</p>
+                                        <td colspan='3'>
+                                            <div class='initiative-description'>
+                                                <p class='text-muted' align='left'>123456</p>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="d-md-none">
-                                        <td colspan="1">
+                                    <tr class='d-md-none'>
+                                        <td colspan='1'>
                                             Subject
                                         </td>
-                                        <td colspan="3">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">College is broken.
+                                        <td colspan='3'>
+                                            <div class='initiative-description'>
+                                                <p class='text-muted' align='left'>College is broken.
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="d-md-none">
-                                        <td colspan="1">
+                                    <tr class='d-md-none'>
+                                        <td colspan='1'>
                                             Category
                                         </td>
-                                        <td colspan="3">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">Institute
+                                        <td colspan='3'>
+                                            <div class='initiative-description'>
+                                                <p class='text-muted' align='left'>Institute
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="d-md-none">
-                                        <td colspan="1">
+                                    <tr class='d-md-none'>
+                                        <td colspan='1'>
                                             Subcategory
                                         </td>
-                                        <td colspan="2">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">Infrastruture
+                                        <td colspan='2'>
+                                            <div class='initiative-description'>
+                                                <p class='text-muted' align='left'>Infrastruture
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="d-md-none">
-                                        <td colspan="1">
+                                    <tr class='d-md-none'>
+                                        <td colspan='1'>
                                             Date
                                         </td>
-                                        <td colspan="2">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">4 July 2020
+                                        <td colspan='2'>
+                                            <div class='initiative-description'>
+                                                <p class='text-muted' align='left'>4 July 2020
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="1">
-                                            <p class="">Description</p>
+                                        <td colspan='1'>
+                                            <p class=''>Description</p>
                                         </td>
-                                        <td colspan="2">
-                                            <div class="initiative-description">
-                                                <p class="text-muted" align="left">XYZ College is not working properly.
+                                        <td colspan='2'>
+                                            <div class='initiative-description'>
+                                                <p class='text-muted' align='left'>XYZ College is not working properly.
                                                     No facilities are provided to students.
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="d-md-none">
-                                        <td colspan="1">
-                                            <p class="">Status</p>
+                                    <tr class='d-md-none'>
+                                        <td colspan='1'>
+                                            <p class=''>Status</p>
                                         </td>
-                                        <td colspan="2">
-                                            <div class="initiative-description">
-                                                <p class="text-warning" align="left">Pending
+                                        <td colspan='2'>
+                                            <div class='initiative-description'>
+                                                <p class='text-warning' align='left'>Pending
                                                 </p>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="1">
-                                            <p class=""></p>
+                                        <td colspan='1'>
+                                            <p class=''></p>
                                         </td>
-                                        <td colspan="3">
-                                            <div style="" class=" mb-2 ">
-                                                <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                        data-target="#Viewmodal" onclick="
+                                        <td colspan='3'>
+                                            <div style='' class=' mb-2 '>
+                                                <button type='button' class='btn btn-primary mt-1' data-toggle='modal'
+                                                        data-target='#Viewmodal' onclick='
                                                     fun_Modal({
                                                     // 'title': 'College is Broken',
                                                     // 'description': 'Description',
-                                                    });"><i
-                                                        style=" font-size: small"
-                                                        class="fa fa-envelope"
-                                                        aria-hidden="true"></i>&nbsp;Messages
+                                                    });'><i
+                                                        style=' font-size: small'
+                                                        class='fa fa-envelope'
+                                                        aria-hidden='true'></i>&nbsp;Messages
                                                 </button>
-                                                <a href="edit_grievance.html">
-                                                    <button class="btn btn-dark mt-1 ml-2"><i
-                                                            style=" font-size: small"
-                                                            class="fa fa-pencil"
-                                                            aria-hidden="true"></i>&nbsp;Edit Draft
+                                                <a href='edit_grievance.html'>
+                                                    <button class='btn btn-dark mt-1 ml-2'><i
+                                                            style=' font-size: small'
+                                                            class='fa fa-pencil'
+                                                            aria-hidden='true'></i>&nbsp;Edit Draft
                                                     </button>
                                                 </a>
-                                                <a href="#">
-                                                    <button class="btn btn-success mt-1 ml-2"><i
-                                                            style=" font-size: small"
-                                                            class="fa fa-check"
-                                                            aria-hidden="true"></i>&nbsp;Approve
+                                                <a href='#'>
+                                                    <button class='btn btn-success mt-1 ml-2'><i
+                                                            style=' font-size: small'
+                                                            class='fa fa-check'
+                                                            aria-hidden='true'></i>&nbsp;Approve
                                                     </button>
                                                 </a>
-                                                <a href="#">
-                                                    <button class="btn btn-danger mt-1 ml-2"><i
-                                                            style=" font-size: small"
-                                                            class="fa fa-times"
-                                                            aria-hidden="true"></i>&nbsp;Disapprove
+                                                <a href='#'>
+                                                    <button class='btn btn-danger mt-1 ml-2'><i
+                                                            style=' font-size: small'
+                                                            class='fa fa-times'
+                                                            aria-hidden='true'></i>&nbsp;Disapprove
                                                     </button>
                                                 </a>
 
@@ -530,6 +515,8 @@
                             </td>
                         </tr>
                         <!--========== ROW 1 ENDS =========-->
+
+
 
                         <!--========== ROW 2 STARTS =========-->
 
@@ -1262,6 +1249,192 @@
                         <!--========== ROW 5 ENDS =========-->
 
                         </tbody>
+                        <tbody id="repeat-this-grievance"></tbody>
+                        <script>
+                            // var txt = $("#repeat-this").html();
+                            var txt = "";
+                            console.log(txt);
+                            for (let i = 0; i < 10; i++) {
+                                txt += "<!--========== ROW 1 STARTS =========-->\n" +
+                                    "\n" +
+                                    "                        <tr aria-rowspan='2' class='card-row'>\n" +
+                                    "                            <td class='align-middle'>\n" +
+                                    "                                <div class='initiative-heading'>\n" +
+                                    "                                    <h6 class=' mb-0' style='text-align: center'>Token Number</h6>\n" +
+                                    "                                    <h6 class='d-xs-block d-md-none mb-0 font-weight-bold'\n" +
+                                    "                                        style='color:#252766; text-align: center; font-size: small !important;'>\n" +
+                                    "                                        123456</h6>\n" +
+                                    "                                    <h3 class='d-none d-md-block mb-0' style='text-align: center; color:#252766;'>\n" +
+                                    "                                        123456</h3>\n" +
+                                    "                                </div>\n" +
+                                    "                            </td>\n" +
+                                    "                            <td class='align-middle'>\n" +
+                                    "                                <p class='m-0 d-xs-block d-md-none font-weight-bold text-uppercase'\n" +
+                                    "                                   style='color:#252766; font-size: small !important;'>College\n" +
+                                    "                                    broken</p>\n" +
+                                    "                                <h5 class='d-none d-md-block mb-0 text-uppercase font-weight-bold'\n" +
+                                    "                                    style='color:#252766'>College\n" +
+                                    "                                    broken</h5>\n" +
+                                    "                                <p class='m-0 d-none d-md-block'><b>Category:</b> Institute</p>\n" +
+                                    "                                <p class='m-0 d-none d-md-block'><b>Sub-Category:</b> Infrastruture</p>\n" +
+                                    "                                <p class='m-0 d-block d-md-none'><b>Status:</b><b class='text-warning'> Pending</b></p>\n" +
+                                    "                            </td>\n" +
+                                    "                            <td class='align-middle'>\n" +
+                                    "                                <p class='m-0 d-none d-md-block'><b>Status:</b><b class='text-warning'> Pending</b></p>\n" +
+                                    "                                <p class='mb-0 d-none d-md-block'><b>Posted on:</b> 4 July 2020</p>\n" +
+                                    "                                <p class='mb-0 d-none d-md-block'>3 days ago</p>\n" +
+                                    "                            </td>\n" +
+                                    "                            <td class='align-middle'>\n" +
+                                    "                                <button type='button' class='btn btn-sm btn-outline-dark' data-toggle='collapse'\n" +
+                                    "                                        data-target='#collapse"+i+"'\n" +
+                                    "                                        aria-expanded='false' aria-controls='collapseExample'>\n" +
+                                    "                                    <i class='fa fa-angle-down' aria-hidden='true'></i>\n" +
+                                    "                                </button>\n" +
+                                    "                            </td>\n" +
+                                    "                            <td class='align-middle' hidden>\n" +
+                                    "\n" +
+                                    "                            </td>\n" +
+                                    "                        </tr>\n" +
+                                    "                        <tr>\n" +
+                                    "                            <td colspan='4' class='sub-td'>\n" +
+                                    "                                <table class='collapse sub-table' id='collapse"+i+"'>\n" +
+                                    "                                    <tr hidden>\n" +
+                                    "                                        <td colspan='1'>\n" +
+                                    "                                            Details of Applied Volunteers\n" +
+                                    "                                        </td>\n" +
+                                    "                                        <td colspan='3'>\n" +
+                                    "                                            <a href=''>\n" +
+                                    "                                                <button class='btn btn-sm btn-outline-primary mt-1'>\n" +
+                                    "                                                    Download\n" +
+                                    "                                                </button>\n" +
+                                    "                                            </a>\n" +
+                                    "                                        </td>\n" +
+                                    "                                    </tr>\n" +
+                                    "                                    <tr class='d-md-none'>\n" +
+                                    "                                        <td colspan='1'>\n" +
+                                    "                                            Token Number\n" +
+                                    "                                        </td>\n" +
+                                    "                                        <td colspan='3'>\n" +
+                                    "                                            <div class='initiative-description'>\n" +
+                                    "                                                <p class='text-muted' align='left'>123456</p>\n" +
+                                    "                                            </div>\n" +
+                                    "                                        </td>\n" +
+                                    "                                    </tr>\n" +
+                                    "                                    <tr class='d-md-none'>\n" +
+                                    "                                        <td colspan='1'>\n" +
+                                    "                                            Subject\n" +
+                                    "                                        </td>\n" +
+                                    "                                        <td colspan='3'>\n" +
+                                    "                                            <div class='initiative-description'>\n" +
+                                    "                                                <p class='text-muted' align='left'>College is broken.\n" +
+                                    "                                                </p>\n" +
+                                    "                                            </div>\n" +
+                                    "                                        </td>\n" +
+                                    "                                    </tr>\n" +
+                                    "                                    <tr class='d-md-none'>\n" +
+                                    "                                        <td colspan='1'>\n" +
+                                    "                                            Category\n" +
+                                    "                                        </td>\n" +
+                                    "                                        <td colspan='3'>\n" +
+                                    "                                            <div class='initiative-description'>\n" +
+                                    "                                                <p class='text-muted' align='left'>Institute\n" +
+                                    "                                                </p>\n" +
+                                    "                                            </div>\n" +
+                                    "                                        </td>\n" +
+                                    "                                    </tr>\n" +
+                                    "                                    <tr class='d-md-none'>\n" +
+                                    "                                        <td colspan='1'>\n" +
+                                    "                                            Subcategory\n" +
+                                    "                                        </td>\n" +
+                                    "                                        <td colspan='2'>\n" +
+                                    "                                            <div class='initiative-description'>\n" +
+                                    "                                                <p class='text-muted' align='left'>Infrastruture\n" +
+                                    "                                                </p>\n" +
+                                    "                                            </div>\n" +
+                                    "                                        </td>\n" +
+                                    "                                    </tr>\n" +
+                                    "                                    <tr class='d-md-none'>\n" +
+                                    "                                        <td colspan='1'>\n" +
+                                    "                                            Date\n" +
+                                    "                                        </td>\n" +
+                                    "                                        <td colspan='2'>\n" +
+                                    "                                            <div class='initiative-description'>\n" +
+                                    "                                                <p class='text-muted' align='left'>4 July 2020\n" +
+                                    "                                                </p>\n" +
+                                    "                                            </div>\n" +
+                                    "                                        </td>\n" +
+                                    "                                    </tr>\n" +
+                                    "                                    <tr>\n" +
+                                    "                                        <td colspan='1'>\n" +
+                                    "                                            <p class=''>Description</p>\n" +
+                                    "                                        </td>\n" +
+                                    "                                        <td colspan='2'>\n" +
+                                    "                                            <div class='initiative-description'>\n" +
+                                    "                                                <p class='text-muted' align='left'>XYZ College is not working properly.\n" +
+                                    "                                                    No facilities are provided to students.\n" +
+                                    "                                                </p>\n" +
+                                    "                                            </div>\n" +
+                                    "                                        </td>\n" +
+                                    "                                    </tr>\n" +
+                                    "                                    <tr class='d-md-none'>\n" +
+                                    "                                        <td colspan='1'>\n" +
+                                    "                                            <p class=''>Status</p>\n" +
+                                    "                                        </td>\n" +
+                                    "                                        <td colspan='2'>\n" +
+                                    "                                            <div class='initiative-description'>\n" +
+                                    "                                                <p class='text-warning' align='left'>Pending\n" +
+                                    "                                                </p>\n" +
+                                    "                                            </div>\n" +
+                                    "                                        </td>\n" +
+                                    "                                    </tr>\n" +
+                                    "                                    <tr>\n" +
+                                    "                                        <td colspan='1'>\n" +
+                                    "                                            <p class=''></p>\n" +
+                                    "                                        </td>\n" +
+                                    "                                        <td colspan='3'>\n" +
+                                    "                                            <div style='' class=' mb-2 '>\n" +
+                                    "                                                <button type='button' class='btn btn-primary mt-1' data-toggle='modal'\n" +
+                                    "                                                        data-target='#Viewmodal' onclick='\n" +
+                                    "                                                    fun_Modal({\n" +
+                                    "                                                    // 'title': 'College is Broken',\n" +
+                                    "                                                    // 'description': 'Description',\n" +
+                                    "                                                    });'><i\n" +
+                                    "                                                        style=' font-size: small'\n" +
+                                    "                                                        class='fa fa-envelope'\n" +
+                                    "                                                        aria-hidden='true'></i>&nbsp;Messages\n" +
+                                    "                                                </button>\n" +
+                                    "                                                <a href='edit_grievance.html'>\n" +
+                                    "                                                    <button class='btn btn-dark mt-1 ml-2'><i\n" +
+                                    "                                                            style=' font-size: small'\n" +
+                                    "                                                            class='fa fa-pencil'\n" +
+                                    "                                                            aria-hidden='true'></i>&nbsp;Edit Draft\n" +
+                                    "                                                    </button>\n" +
+                                    "                                                </a>\n" +
+                                    "                                                <a href='#'>\n" +
+                                    "                                                    <button class='btn btn-success mt-1 ml-2'><i\n" +
+                                    "                                                            style=' font-size: small'\n" +
+                                    "                                                            class='fa fa-check'\n" +
+                                    "                                                            aria-hidden='true'></i>&nbsp;Approve\n" +
+                                    "                                                    </button>\n" +
+                                    "                                                </a>\n" +
+                                    "                                                <a href='#'>\n" +
+                                    "                                                    <button class='btn btn-danger mt-1 ml-2'><i\n" +
+                                    "                                                            style=' font-size: small'\n" +
+                                    "                                                            class='fa fa-times'\n" +
+                                    "                                                            aria-hidden='true'></i>&nbsp;Disapprove\n" +
+                                    "                                                    </button>\n" +
+                                    "                                                </a>\n" +
+                                    "\n" +
+                                    "                                            </div>\n" +
+                                    "                                        </td>\n" +
+                                    "                                    </tr>\n" +
+                                    "                                </table>\n" +
+                                    "                            </td>\n" +
+                                    "                        </tr>\n" +
+                                    "                        <!--========== ROW 1 ENDS =========-->";
+                            }
+                            $("#repeat-this-grievance").html(txt);
+                        </script>
                     </table>
                 </div>
             </div>
@@ -1415,6 +1588,171 @@
                         </tr>
                         <!--========== ROW 1 ENDS =========-->
                         </tbody>
+                        <script>
+                            // var txt = $("#repeat-this").html();
+                            var txt = "";
+                            console.log(txt);
+                            for (let i = 0; i < 10; i++) {
+                                txt += "<!--========== ROW 1 STARTS =========-->\n" +
+                                "\n" +
+                                "                        <tr aria-rowspan='2' class='card-row'>\n" +
+                                "                            <td class='align-middle'>\n" +
+                                "                                <div class='initiative-heading'>\n" +
+                                "                                    <h6 class='font-weight-bold mb-0'>Token Number</h6>\n" +
+                                "                                    <br><h6 class='d-xs-block d-md-none'>123456</h6>\n" +
+                                "                                    <h3 class='d-none d-md-block'>123456</h3>\n" +
+                                "                                </div>\n" +
+                                "                            </td>\n" +
+                                "                            <td class='align-middle'>\n" +
+                                "                                <p class='m-0 d-xs-block d-md-none font-weight-bold' style='color:#252766'>College\n" +
+                                "                                    broken</p>\n" +
+                                "                                <h5 class='d-none d-md-block' style='color:#252766'>College broken</h5>\n" +
+                                "                                <p class='m-0 d-none d-md-block'><b>Category :</b> Institute</p>\n" +
+                                "                                <p class='m-0 d-none d-md-block'><b>Sub-Category :</b> Infrastruture</p>\n" +
+                                "                                <p class='m-0'><b>Status :</b><b class='text-warning'> Pending</b></p>\n" +
+                                "                            </td>\n" +
+                                "                            <td class='align-middle'>\n" +
+                                "                                <p class='mb-4 d-none d-md-block'><b>Date :</b> 4 July 2020</p><br>\n" +
+                                "                                <p class='m-0 d-none d-md-block'><b>3 days ago</b></p>\n" +
+                                "                            </td>\n" +
+                                "                            <td class='align-middle'>\n" +
+                                "                                <button type='button' class='btn btn-sm btn-outline-dark' data-toggle='collapse'\n" +
+                                "                                        data-target='#collapse"+i+"'\n" +
+                                "                                        aria-expanded='false' aria-controls='collapseExample'>\n" +
+                                "                                    <i class='fa fa-angle-down' aria-hidden='true'></i>\n" +
+                                "                                </button>\n" +
+                                "                            </td>\n" +
+                                "                            <td class='align-middle' hidden>\n" +
+                                "\n" +
+                                "                            </td>\n" +
+                                "                        </tr>\n" +
+                                "                        <tr>\n" +
+                                "                            <td colspan='4' class='sub-td'>\n" +
+                                "                                <table class='collapse sub-table' id='collapse"+i+"'>\n" +
+                                "                                    <tr hidden>\n" +
+                                "                                        <td colspan='1'>\n" +
+                                "                                            Details of Applied Volunteers\n" +
+                                "                                        </td>\n" +
+                                "                                        <td colspan='3'>\n" +
+                                "                                            <a href=''>\n" +
+                                "                                                <button class='btn btn-sm btn-outline-primary mt-1'>\n" +
+                                "                                                    Download\n" +
+                                "                                                </button>\n" +
+                                "                                            </a>\n" +
+                                "                                        </td>\n" +
+                                "                                    </tr>\n" +
+                                "                                    <tr class='d-md-none'>\n" +
+                                "                                        <td colspan='1'>\n" +
+                                "                                            Token Number\n" +
+                                "                                        </td>\n" +
+                                "                                        <td colspan='3'>\n" +
+                                "                                            <div class='initiative-description'>\n" +
+                                "                                                <p class='text-muted' align='left'>123456</p>\n" +
+                                "                                            </div>\n" +
+                                "                                        </td>\n" +
+                                "                                    </tr>\n" +
+                                "                                    <tr class='d-md-none'>\n" +
+                                "                                        <td colspan='1'>\n" +
+                                "                                            Subject\n" +
+                                "                                        </td>\n" +
+                                "                                        <td colspan='3'>\n" +
+                                "                                            <div class='initiative-description'>\n" +
+                                "                                                <p class='text-muted' align='left'>College is broken.\n" +
+                                "                                                </p>\n" +
+                                "                                            </div>\n" +
+                                "                                        </td>\n" +
+                                "                                    </tr>\n" +
+                                "                                    <tr class='d-md-none'>\n" +
+                                "                                        <td colspan='1'>\n" +
+                                "                                            Category\n" +
+                                "                                        </td>\n" +
+                                "                                        <td colspan='3'>\n" +
+                                "                                            <div class='initiative-description'>\n" +
+                                "                                                <p class='text-muted' align='left'>Institute\n" +
+                                "                                                </p>\n" +
+                                "                                            </div>\n" +
+                                "                                        </td>\n" +
+                                "                                    </tr>\n" +
+                                "                                    <tr class='d-md-none'>\n" +
+                                "                                        <td colspan='1'>\n" +
+                                "                                            Subcategory\n" +
+                                "                                        </td>\n" +
+                                "                                        <td colspan='2'>\n" +
+                                "                                            <div class='initiative-description'>\n" +
+                                "                                                <p class='text-muted' align='left'>Infrastruture\n" +
+                                "                                                </p>\n" +
+                                "                                            </div>\n" +
+                                "                                        </td>\n" +
+                                "                                    </tr>\n" +
+                                "                                    <tr class='d-md-none'>\n" +
+                                "                                        <td colspan='1'>\n" +
+                                "                                            Date\n" +
+                                "                                        </td>\n" +
+                                "                                        <td colspan='2'>\n" +
+                                "                                            <div class='initiative-description'>\n" +
+                                "                                                <p class='text-muted' align='left'>4 July 2020\n" +
+                                "                                                </p>\n" +
+                                "                                            </div>\n" +
+                                "                                        </td>\n" +
+                                "                                    </tr>\n" +
+                                "                                    <tr>\n" +
+                                "                                        <td colspan='1'>\n" +
+                                "                                            <p class='mt-1'>Description</p>\n" +
+                                "                                        </td>\n" +
+                                "                                        <td colspan='2'>\n" +
+                                "                                            <div class='initiative-description'>\n" +
+                                "                                                <p class='text-muted' align='left'>XYZ College is not working properly.\n" +
+                                "                                                    No facilities are provided to students.\n" +
+                                "                                                </p>\n" +
+                                "                                            </div>\n" +
+                                "                                        </td>\n" +
+                                "                                    </tr>\n" +
+                                "                                    <tr class='d-md-none'>\n" +
+                                "                                        <td colspan='1'>\n" +
+                                "                                            <p class='mt-1'>Status</p>\n" +
+                                "                                        </td>\n" +
+                                "                                        <td colspan='2'>\n" +
+                                "                                            <div class='initiative-description'>\n" +
+                                "                                                <p class='text-warning' align='left'>Pending\n" +
+                                "                                                </p>\n" +
+                                "                                            </div>\n" +
+                                "                                        </td>\n" +
+                                "                                    </tr>\n" +
+                                "                                    <tr>\n" +
+                                "                                        <td colspan='1'>\n" +
+                                "                                            <p class='mt-1'></p>\n" +
+                                "                                        </td>\n" +
+                                "                                        <td colspan='3'>\n" +
+                                "                                            <div style='' class=' mb-2 '>\n" +
+                                "                                                <button type='button' class='btn btn-primary mt-1' data-toggle='modal'\n" +
+                                "                                                        data-target='#Viewmodal' onclick='\n" +
+                                "                                                fun_Modal({\n" +
+                                "                                                'title': 'Token Id : 12345',\n" +
+                                "                                                'description': 'Description',\n" +
+                                "                                                });'>View\n" +
+                                "                                                </button>\n" +
+                                "                                                <a href='#'>\n" +
+                                "                                                    <button class='btn btn-success mt-1 ml-2'>Approve</button>\n" +
+                                "                                                </a>\n" +
+                                "                                                <a href='#'>\n" +
+                                "                                                    <button class='btn btn-danger mt-1 ml-2'>Discard</button>\n" +
+                                "                                                </a>\n" +
+                                "                                                <a href='edit_grievance.html'>\n" +
+                                "                                                    <button class='btn btn-dark mt-1 ml-2'>Edit Draft &nbsp<i\n" +
+                                "                                                            style=' font-size: small'\n" +
+                                "                                                            class='fa fa-pencil'\n" +
+                                "                                                            aria-hidden='true'></i></button>\n" +
+                                "                                                </a>\n" +
+                                "                                            </div>\n" +
+                                "                                        </td>\n" +
+                                "                                    </tr>\n" +
+                                "                                </table>\n" +
+                                "                            </td>\n" +
+                                "                        </tr>\n" +
+                                "                        <!--========== ROW 1 ENDS =========-->";
+                            }
+                            $("#repeat-this").html(txt);
+                        </script>
                     </table>
                 </div>
             </div>

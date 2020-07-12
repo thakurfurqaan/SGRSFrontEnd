@@ -30,6 +30,26 @@
             <div class="col-md-6">
                 <ul class="nav nav-footer justify-content-end">
                     <li class="nav-item">
+                        <select onchange="doGTranslate(this);" style="border-radius: 5px; padding: 8px 16px !important; ::ms-expand{ display: none}; -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: ''; border: none; cursor: pointer">
+                            <option class="lang notranslate" value="en|en">English</option>
+                            <option class="lang notranslate" value="en|ar">Arabic</option>
+                            <option class="lang notranslate" value="en|hi">Hindi</option>
+                            <option class="lang notranslate" value="en|fa">Persian</option>
+                            <option class="lang notranslate" value="en|ur">Urdu</option>
+                            <option class="lang notranslate" value="en|bn">Bengali</option>
+                            <option class="lang notranslate" value="en|gu">Gujarati</option>
+                            <option class="lang notranslate" value="en|kn">Kannada</option>
+                            <option class="lang notranslate" value="en|mr">Marathi</option>
+                            <option class="lang notranslate" value="en|ne">Nepali</option>
+                            <option class="lang notranslate" value="en|pa">Punjabi</option>
+                            <option class="lang notranslate" value="en|ta">Tamil</option>
+                            <option class="lang notranslate" value="en|te">Telugu</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
                         <a href="terms_of_service.html" class="nav-link">Terms of Service</a>
                     </li>
                     <li class="nav-item">
@@ -40,3 +60,13 @@
         </div>
     </div>
 </footer>
+<script>!function (e, t, a) {
+    var c = e.head || e.getElementsByTagName("head")[0], n = e.createElement("script");
+    n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/chat_widget.js?config=" + JSON.stringify(a), c.appendChild(n)
+}(document, "https://app.engati.com", {
+    bot_key: "230b1e19f4aa4381",
+    welcome_msg: true,
+    branding_key: "default",
+    server: "https://app.engati.com",
+    e: "p"
+});</script>

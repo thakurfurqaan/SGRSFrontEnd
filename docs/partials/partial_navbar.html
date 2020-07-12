@@ -12,7 +12,8 @@
 
             <div class="navbar-brand p-0 ml-2 d-none d-lg-block ml-4" href="#">
                 <div class="row justify-content-center">
-                    <h5 style="text-align: center" class="mb-0 font-weight-bolder">STUDENT GRIEVANCE REDRESSAL PORTAL</h5>
+                    <h5 style="text-align: center" class="mb-0 font-weight-bolder">STUDENT GRIEVANCE REDRESSAL
+                        PORTAL</h5>
                 </div>
                 <div class="row">
                     <h6 style="text-align: left" class="mb-0">Govt. of Andhra Pradesh</h6>
@@ -34,7 +35,10 @@
                     <li class="nav-item"><a href="index.html#contact" class="nav-link  ">Contact</a></li>
                     <li class="nav-item"><a href="index.html#about" class="nav-link  ">About</a></li>
                     <li class="nav-item dropdown mr-2">
-                        <select onchange="doGTranslate(this);">
+                        <select onchange="doGTranslate(this);" style="border-radius: 5px; padding: 8px 16px !important; ::ms-expand{ display: none}; -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: ''; border: none; cursor: pointer; background-color: ghostwhite">
                             <option class="lang notranslate" value="en|en">English</option>
                             <option class="lang notranslate" value="en|ar">Arabic</option>
                             <option class="lang notranslate" value="en|hi">Hindi</option>
@@ -50,8 +54,8 @@
                             <option class="lang notranslate" value="en|te">Telugu</option>
                         </select>
                     </li>
-                    <li class="nav-item dropdown d-none" hidden>
-                        <a class="nav-link d-none d-lg-block" href="#" id="navbarDropdownMenuLink"
+                    <li class="nav-item dropdown">
+                        <a class="nav-link d-none" href="#" id="navbarDropdownMenuLink"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
                             <i style="font-size: x-large;" class="fa fa-user-circle"></i>
@@ -63,17 +67,40 @@
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="login.html">Login</a>
-                            <a class="dropdown-item" href="register.html">Register</a>
-                            <a class="dropdown-item" href="ngo_dashboard.html">Dashboard (N)</a>
-                            <a class="dropdown-item" href="volunteer_dashboard.html">Dashboard (V)</a>
-                            <a class="dropdown-item" href="index.html">Logout</a>
+                            <a class="dropdown-item" href="dashboard.html"><i style="font-size:large" class="fa fa-home"
+                                                                              aria-hidden="true"></i>&nbsp;&nbsp;Dashboard</a>
+                            <a class="dropdown-item" href="add_grievance.html"><i style="font-size:large"
+                                                                                  class="fa fa-plus"
+                                                                                  aria-hidden="true"></i>&nbsp;&nbsp;Lodge
+                                Grievance</a>
+                            <a class="dropdown-item" href="grievances_list.html"><i style="font-size:large"
+                                                                                    class="fa fa-comments"
+                                                                                    aria-hidden="true"></i>&nbsp;&nbsp;My
+                                Grievances</a>
+                            <a class="dropdown-item" href="members_list.html"><i style="font-size:large"
+                                                                                 class="fa fa-users"
+                                                                                 aria-hidden="true"></i>&nbsp;&nbsp;Members</a>
+                            <a class="dropdown-item" href="bodies_list.html"><i style="font-size:large"
+                                                                                class="fa fa-university"
+                                                                                aria-hidden="true"></i>&nbsp;&nbsp;Bodies</a>
+                            <a class="dropdown-item" href="students_list.html"><i style="font-size:large"
+                                                                                  class="fa fa-graduation-cap"
+                                                                                  aria-hidden="true"></i>&nbsp;&nbsp;Students</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="view_profile.html"><i style="font-size:large"
+                                                                                 class="fa fa-user"
+                                                                                 aria-hidden="true"></i>&nbsp;&nbsp;My
+                                Profile</a>
+                            <a class="dropdown-item" href="index.html"><i style="font-size:large" class="fa fa-sign-out"
+                                                                          aria-hidden="true"></i>&nbsp;&nbsp;Logout</a>
                         </div>
                     </li>
+
                     <li class="nav-item dropdown d-none d-lg-block">
                         <a class="nav-link p-0" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img class="mr-2" style="border-radius: 50%" height="30" src="static/assets/img/student_dp.jpg" alt="">
+                            <img class="mr-2" style="border-radius: 50%" height="30"
+                                 src="static/assets/img/student_dp.jpg" alt="">
                             Furqaan Thakur
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -199,8 +226,8 @@
             } else {
                 // $('.navbar').removeClass('active');
                 $('.navbar').removeClass('put-shadow');
-                if (((getBootstrapDeviceSize() == 'lg') || (getBootstrapDeviceSize() == 'xl')));
-                    // $('.navbar-logo').addClass('hidden');
+                if (((getBootstrapDeviceSize() == 'lg') || (getBootstrapDeviceSize() == 'xl'))) ;
+                // $('.navbar-logo').addClass('hidden');
             }
         });
     });
