@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>
+        View Grievance
+    </title>
+    <link rel="icon" sizes="76x76" href="static/assets/img/Logos/govt-logo-trans.png">
+
+    <!----Custom Files----->
+    <link href="static/assets/css/custom-css/index.css" rel="stylesheet"/>
+
+    <!---JQuery----->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+
+    <!---Bootstrap----->
+    <link href="static/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+    <!-----Fonts----->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="static/assets/css/font-awesome.min.css" rel="stylesheet"/>
+
+</head>
+
+<body class="landing-page"
+      style="background-color: #f5f9fe">
+
+<div class="partials_navbar_import d-block d-lg-none"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.partials_navbar_import').load('partials/partial_navbar.html');
+    });
+</script>
+
+<!-- Sidebar -->
+<div class="partials_sidebar_import d-none d-lg-block"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.partials_sidebar_import').load('partials/partial_sidebar.html');
+    });
+</script>
+<!--End Sidebar -->
+
+<!---New Page Title--->
+<div class="container pl-lg-5 mt-4 mt-lg-0 mb-2">
+    <div class="col page-title " style="padding-top: 50px; padding-bottom: 5px;">
+        <div class="row align-items-center" align="center">
+            <div class="col">
+                <h1 class="font-weight-bold" style="color:#252766; text-align: left">View Grievance</h1>
+                <h6 href="grievances_list.html" class="text-muted" style="color:#252766; text-align: left"><a
+                        href="" onClick="javascript:history.go(-1)" class="text-muted">< Back</a></h6>
+            </div>
+            <div class="col justify-content-end d-none d-lg-block">
+                <h6 class="font-weight-bold" style="color:#252766; text-align: end">
+                    <img src="static/assets/img/student_dp.jpg" class="profile-pic-dashboard" height="50">
+                    &nbsp;
+                    Furqaan Thakur
+                    <span class="badge badge-secondary" style="background-color:#252766">Student</span>
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!---New Page Title Ends--->
+
+<!---Page Content Starts--->
+
+<div class="container mt-3 pl-lg-5">
+    <div class="row">
+        <div class="col-lg-7 col-12 px-lg-3 ">
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center mx-1">
+                    <div class="">
+                        <h5 class="my-3 card-custom-title" style="">College has been Demolished!</h5>
+                    </div>
+                </div>
+                <div class="row mt-2 py-3 mx-1" style="border-radius: 5px; border: 1px solid #dee2e6;">
+                    <div class="col-6">
+                        <label for="exampleInputEmail1"><b>Change Status</b></label>
+                        <select class="custom-select input-group-sm" id="inputGroupSelect03"
+                                style="border-radius: 5px">
+                            <option>--- Status ---</option>
+                            <option value="1" selected>Resolved</option>
+                            <option value="2">Discarded</option>
+                            <option value="3">Pending</option>
+                            <option value="4">In-draft</option>
+                            <option value="4">In-review</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="exampleInputEmail1">&nbsp;</label>
+                        <button class="btn btn-outline-warning" style="width: 100%">Update Status</button>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center py-3 mx-1 mt-2"
+                     style="border: 1px solid #dee2e6; border-radius: 5px">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-12 col-lg-6"><p><b>Token No.:</b> 123456789</p></div>
+                            <div class="col"><p><b>Status:</b><span class="text-warning"> Pending</span></p></div>
+                            <div class="col-12 col-lg-6"><p><b>Category:</b> University</p></div>
+                            <div class="col"><p><b>Sub-category:</b> Infrastructure</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center py-3 mx-1 mt-2"
+                     style="border: 1px solid #dee2e6; border-radius: 5px">
+                    <div class="col">
+                        <h6 class="font-weight-bold">Description</h6>
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum ducimus et ex iusto
+                            magni minima molestias, necessitatibus nesciunt nisi obcaecati odit perspiciatis quod
+                            ratione rerum soluta sunt tenetur voluptatem?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum ducimus et ex iusto
+                            magni minima molestias, necessitatibus nesciunt nisi obcaecati odit perspiciatis quod
+                            ratione rerum soluta sunt tenetur voluptatem?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum ducimus et ex iusto
+                            magni minima molestias, necessitatibus nesciunt nisi obcaecati odit perspiciatis quod
+                            ratione rerum soluta sunt tenetur voluptatem?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum ducimus et ex iusto
+                            magni minima molestias, necessitatibus nesciunt nisi obcaecati odit perspiciatis quod
+                            ratione rerum soluta sunt tenetur voluptatem?
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center py-3 mx-1 mt-2">
+                    <button class="btn btn-dark" style="width: 100%">Edit Draft</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-12 px-lg-3 ">
+            <div class="card-custom mt-2 mt-lg-0 help-card">
+                <div class="row justify-content-between align-items-center mx-1">
+                    <div class="">
+                        <h5 class="my-3 card-custom-title" style="">Messages</h5>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center mx-1">
+                    <div class="col-12">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12 col-12 px-lg-0 order-lg-1 p-0">
+
+                                <div style="height:300px; overflow-y:scroll; border: 1px solid #dee2e6; border-radius: 5px;">
+                                    <table class="table filter-this-table">
+                                        <tbody>
+                                        <tr>
+                                            <td style="vertical-align: middle; border-top: none !important;"
+                                                colspan="1">
+                                                <table class="table filter-this-table mb-0">
+                                                    <tr>
+                                                        <td style="padding: 4px; border-top: none !important;">
+                                                            <h6 class="my-2">Institute Head</h6>
+                                                        </td>
+                                                        <td style="padding: 4px; text-align: right; border-top: none !important;">
+                                                            <h6 class="my-2">8 May 2020 12:36</h6>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <p>
+                                                    We are looking into your matter.
+                                                    Due to technical issues it may take longer time.
+                                                </p>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td style="vertical-align: middle; border-top: none !important;"
+                                                colspan="1">
+                                                <table class="table filter-this-table mb-0">
+                                                    <tr>
+                                                        <td style="padding: 4px; border-top: none !important;">
+                                                            <h6 class="my-2"> You </h6>
+                                                        </td>
+                                                        <td style="padding: 4px; text-align: right; border-top: none !important;">
+                                                            <h6 class="my-2">9 May 2020 12:36</h6>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <p>
+                                                    No problem,Hopefully it will resolve soon.
+                                                </p>
+                                            </td>
+                                        </tr>
+
+                                        <!--========== ROW 1 ENDS =========-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group my-3 ">
+                            <label for="exampleInputEmail1">Reply</label>
+                            <textarea rows="5" class="form-control" aria-label="With textarea"
+                                      placeholder="Type Your Text Here..."></textarea>
+                        </div>
+                        <div class="row form-group">
+                            <label for="exampleFormControlFile1">Upload files (if any)</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <div class="row" style="text-align: center" class=" mb-3 ">
+                            <button type="button" class="btn btn-success" style="width: 100%"><i
+                                    class="fa fa-paper-plane"
+                                    aria-hidden="true"></i> &nbsp
+                                Send
+                            </button>
+                            <button class="btn btn-outline-primary" style="width: 100%" hidden>Submit</button>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer align-middle justify-content-center pt-0" style="border-top: none">
+                        <button type="button" class="btn btn-success" hidden><i class="fa fa-share-alt"
+                                                                                aria-hidden="true"></i> Send
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---Page Content Ends--->
+
+<br/><br/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</body>
+
+</html>
+
+
